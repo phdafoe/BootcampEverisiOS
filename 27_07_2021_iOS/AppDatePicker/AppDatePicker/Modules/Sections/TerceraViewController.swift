@@ -15,6 +15,8 @@ class TerceraViewController: UIViewController {
     var prioridadDataSource = ["BAJA", "MEDIA", "ALTA", "MUY ALTA"]
     var imagenesPerfilDataSource = ["felipe", "maria", "felipe", "maria"]
     
+    
+    
     // MARK: - Outles
     @IBOutlet weak var localidadMadrid: UITextField!
     @IBOutlet weak var codigoPostalZona: UITextField!
