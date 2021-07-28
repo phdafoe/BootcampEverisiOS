@@ -59,6 +59,9 @@
                                 <state key="normal" title="Enviar Mail">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="enviaMail:" destination="tgt-Jt-aoL" eventType="touchUpInside" id="7lJ-Gt-7el"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="codigo postal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q3d-EO-dTU">
                                 <rect key="frame" x="20" y="408" width="374" height="34"/>
