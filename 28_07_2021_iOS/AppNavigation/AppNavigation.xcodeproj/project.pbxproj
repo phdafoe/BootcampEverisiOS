@@ -13,6 +13,9 @@
 		B475655B26B12ADB00B2BBCD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B475655926B12ADB00B2BBCD /* Main.storyboard */; };
 		B475655D26B12ADD00B2BBCD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B475655C26B12ADD00B2BBCD /* Assets.xcassets */; };
 		B475656026B12ADD00B2BBCD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B475655E26B12ADD00B2BBCD /* LaunchScreen.storyboard */; };
+		B475657C26B1422D00B2BBCD /* SegundaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B475657B26B1422D00B2BBCD /* SegundaViewController.swift */; };
+		B475657F26B1423900B2BBCD /* TerceraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B475657E26B1423900B2BBCD /* TerceraViewController.swift */; };
+		B475658226B1424600B2BBCD /* CuartaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B475658126B1424600B2BBCD /* CuartaViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		B475655C26B12ADD00B2BBCD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B475655F26B12ADD00B2BBCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B475656126B12ADD00B2BBCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B475657B26B1422D00B2BBCD /* SegundaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegundaViewController.swift; sourceTree = "<group>"; };
+		B475657E26B1423900B2BBCD /* TerceraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerceraViewController.swift; sourceTree = "<group>"; };
+		B475658126B1424600B2BBCD /* CuartaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuartaViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,50 @@
 		B475655226B12ADB00B2BBCD /* AppNavigation */ = {
 			isa = PBXGroup;
 			children = (
-				B475655326B12ADB00B2BBCD /* AppDelegate.swift */,
-				B475655526B12ADB00B2BBCD /* SceneDelegate.swift */,
-				B475655726B12ADB00B2BBCD /* ViewController.swift */,
-				B475655926B12ADB00B2BBCD /* Main.storyboard */,
+				B475657926B1420900B2BBCD /* Modules */,
+				B475657626B141F700B2BBCD /* Views */,
+				B475657426B141ED00B2BBCD /* CoreApp */,
 				B475655C26B12ADD00B2BBCD /* Assets.xcassets */,
 				B475655E26B12ADD00B2BBCD /* LaunchScreen.storyboard */,
 				B475656126B12ADD00B2BBCD /* Info.plist */,
 			);
 			path = AppNavigation;
+			sourceTree = "<group>";
+		};
+		B475657426B141ED00B2BBCD /* CoreApp */ = {
+			isa = PBXGroup;
+			children = (
+				B475655326B12ADB00B2BBCD /* AppDelegate.swift */,
+				B475655526B12ADB00B2BBCD /* SceneDelegate.swift */,
+			);
+			path = CoreApp;
+			sourceTree = "<group>";
+		};
+		B475657626B141F700B2BBCD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B475655926B12ADB00B2BBCD /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B475657926B1420900B2BBCD /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				B475657A26B1421000B2BBCD /* Sections */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		B475657A26B1421000B2BBCD /* Sections */ = {
+			isa = PBXGroup;
+			children = (
+				B475655726B12ADB00B2BBCD /* ViewController.swift */,
+				B475657B26B1422D00B2BBCD /* SegundaViewController.swift */,
+				B475658126B1424600B2BBCD /* CuartaViewController.swift */,
+				B475657E26B1423900B2BBCD /* TerceraViewController.swift */,
+			);
+			path = Sections;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +178,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B475657F26B1423900B2BBCD /* TerceraViewController.swift in Sources */,
+				B475657C26B1422D00B2BBCD /* SegundaViewController.swift in Sources */,
+				B475658226B1424600B2BBCD /* CuartaViewController.swift in Sources */,
 				B475655826B12ADB00B2BBCD /* ViewController.swift in Sources */,
 				B475655426B12ADB00B2BBCD /* AppDelegate.swift in Sources */,
 				B475655626B12ADB00B2BBCD /* SceneDelegate.swift in Sources */,
