@@ -10,6 +10,15 @@
 		B475659726B1713100B2BBCD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B475659626B1713100B2BBCD /* AppDelegate.swift */; };
 		B47565A026B1713300B2BBCD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B475659F26B1713300B2BBCD /* Assets.xcassets */; };
 		B47565A326B1713300B2BBCD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B47565A126B1713300B2BBCD /* LaunchScreen.storyboard */; };
+		B47565B126B1726800B2BBCD /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47565B026B1726800B2BBCD /* AppCoordinator.swift */; };
+		B47565B726B1735400B2BBCD /* TableMonthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47565B526B1735400B2BBCD /* TableMonthViewController.swift */; };
+		B47565B826B1735400B2BBCD /* TableMonthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B47565B626B1735400B2BBCD /* TableMonthViewController.xib */; };
+		B47565BD26B177E000B2BBCD /* TableMonthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47565BC26B177E000B2BBCD /* TableMonthCoordinator.swift */; };
+		B47565C326B1798200B2BBCD /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47565C126B1798200B2BBCD /* DetailViewController.swift */; };
+		B47565C426B1798200B2BBCD /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B47565C226B1798200B2BBCD /* DetailViewController.xib */; };
+		B47565C726B179A000B2BBCD /* DetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47565C626B179A000B2BBCD /* DetailCoordinator.swift */; };
+		B47565CC26B17D2400B2BBCD /* MonthsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47565CA26B17D2400B2BBCD /* MonthsTableViewCell.swift */; };
+		B47565CD26B17D2400B2BBCD /* MonthsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B47565CB26B17D2400B2BBCD /* MonthsTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +27,15 @@
 		B475659F26B1713300B2BBCD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B47565A226B1713300B2BBCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B47565A426B1713300B2BBCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B47565B026B1726800B2BBCD /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		B47565B526B1735400B2BBCD /* TableMonthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableMonthViewController.swift; sourceTree = "<group>"; };
+		B47565B626B1735400B2BBCD /* TableMonthViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableMonthViewController.xib; sourceTree = "<group>"; };
+		B47565BC26B177E000B2BBCD /* TableMonthCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableMonthCoordinator.swift; sourceTree = "<group>"; };
+		B47565C126B1798200B2BBCD /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		B47565C226B1798200B2BBCD /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		B47565C626B179A000B2BBCD /* DetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCoordinator.swift; sourceTree = "<group>"; };
+		B47565CA26B17D2400B2BBCD /* MonthsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthsTableViewCell.swift; sourceTree = "<group>"; };
+		B47565CB26B17D2400B2BBCD /* MonthsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MonthsTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,12 +68,69 @@
 		B475659526B1713100B2BBCD /* AppIntroTableView */ = {
 			isa = PBXGroup;
 			children = (
-				B475659626B1713100B2BBCD /* AppDelegate.swift */,
+				B47565B326B1730800B2BBCD /* Modules */,
+				B47565AE26B1721700B2BBCD /* CoreApp */,
 				B475659F26B1713300B2BBCD /* Assets.xcassets */,
 				B47565A126B1713300B2BBCD /* LaunchScreen.storyboard */,
 				B47565A426B1713300B2BBCD /* Info.plist */,
 			);
 			path = AppIntroTableView;
+			sourceTree = "<group>";
+		};
+		B47565AE26B1721700B2BBCD /* CoreApp */ = {
+			isa = PBXGroup;
+			children = (
+				B475659626B1713100B2BBCD /* AppDelegate.swift */,
+				B47565B026B1726800B2BBCD /* AppCoordinator.swift */,
+			);
+			path = CoreApp;
+			sourceTree = "<group>";
+		};
+		B47565B326B1730800B2BBCD /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				B47565B426B1730F00B2BBCD /* Sections */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		B47565B426B1730F00B2BBCD /* Sections */ = {
+			isa = PBXGroup;
+			children = (
+				B47565C026B1796400B2BBCD /* Detail */,
+				B47565BF26B1795900B2BBCD /* Master */,
+			);
+			path = Sections;
+			sourceTree = "<group>";
+		};
+		B47565BF26B1795900B2BBCD /* Master */ = {
+			isa = PBXGroup;
+			children = (
+				B47565C926B17CDB00B2BBCD /* Cell */,
+				B47565B526B1735400B2BBCD /* TableMonthViewController.swift */,
+				B47565B626B1735400B2BBCD /* TableMonthViewController.xib */,
+				B47565BC26B177E000B2BBCD /* TableMonthCoordinator.swift */,
+			);
+			path = Master;
+			sourceTree = "<group>";
+		};
+		B47565C026B1796400B2BBCD /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				B47565C126B1798200B2BBCD /* DetailViewController.swift */,
+				B47565C226B1798200B2BBCD /* DetailViewController.xib */,
+				B47565C626B179A000B2BBCD /* DetailCoordinator.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		B47565C926B17CDB00B2BBCD /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				B47565CA26B17D2400B2BBCD /* MonthsTableViewCell.swift */,
+				B47565CB26B17D2400B2BBCD /* MonthsTableViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -115,8 +190,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B47565CD26B17D2400B2BBCD /* MonthsTableViewCell.xib in Resources */,
 				B47565A326B1713300B2BBCD /* LaunchScreen.storyboard in Resources */,
+				B47565B826B1735400B2BBCD /* TableMonthViewController.xib in Resources */,
 				B47565A026B1713300B2BBCD /* Assets.xcassets in Resources */,
+				B47565C426B1798200B2BBCD /* DetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,7 +205,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B47565BD26B177E000B2BBCD /* TableMonthCoordinator.swift in Sources */,
+				B47565B126B1726800B2BBCD /* AppCoordinator.swift in Sources */,
+				B47565C326B1798200B2BBCD /* DetailViewController.swift in Sources */,
+				B47565C726B179A000B2BBCD /* DetailCoordinator.swift in Sources */,
 				B475659726B1713100B2BBCD /* AppDelegate.swift in Sources */,
+				B47565B726B1735400B2BBCD /* TableMonthViewController.swift in Sources */,
+				B47565CC26B17D2400B2BBCD /* MonthsTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
