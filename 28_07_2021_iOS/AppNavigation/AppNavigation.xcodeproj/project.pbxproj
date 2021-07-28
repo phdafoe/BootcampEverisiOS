@@ -16,6 +16,7 @@
 		B475657C26B1422D00B2BBCD /* SegundaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B475657B26B1422D00B2BBCD /* SegundaViewController.swift */; };
 		B475657F26B1423900B2BBCD /* TerceraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B475657E26B1423900B2BBCD /* TerceraViewController.swift */; };
 		B475658226B1424600B2BBCD /* CuartaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B475658126B1424600B2BBCD /* CuartaViewController.swift */; };
+		B475658726B1436600B2BBCD /* Helpers+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B475658626B1436600B2BBCD /* Helpers+Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		B475657B26B1422D00B2BBCD /* SegundaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegundaViewController.swift; sourceTree = "<group>"; };
 		B475657E26B1423900B2BBCD /* TerceraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerceraViewController.swift; sourceTree = "<group>"; };
 		B475658126B1424600B2BBCD /* CuartaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuartaViewController.swift; sourceTree = "<group>"; };
+		B475658626B1436600B2BBCD /* Helpers+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Helpers+Utils.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 		B475655226B12ADB00B2BBCD /* AppNavigation */ = {
 			isa = PBXGroup;
 			children = (
+				B475658426B1432300B2BBCD /* Helpers+Utils */,
 				B475657926B1420900B2BBCD /* Modules */,
 				B475657626B141F700B2BBCD /* Views */,
 				B475657426B141ED00B2BBCD /* CoreApp */,
@@ -106,6 +109,14 @@
 				B475657E26B1423900B2BBCD /* TerceraViewController.swift */,
 			);
 			path = Sections;
+			sourceTree = "<group>";
+		};
+		B475658426B1432300B2BBCD /* Helpers+Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B475658626B1436600B2BBCD /* Helpers+Utils.swift */,
+			);
+			path = "Helpers+Utils";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,6 +195,7 @@
 				B475655826B12ADB00B2BBCD /* ViewController.swift in Sources */,
 				B475655426B12ADB00B2BBCD /* AppDelegate.swift in Sources */,
 				B475655626B12ADB00B2BBCD /* SceneDelegate.swift in Sources */,
+				B475658726B1436600B2BBCD /* Helpers+Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

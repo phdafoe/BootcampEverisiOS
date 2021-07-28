@@ -8,6 +8,9 @@
 import UIKit
 
 class TerceraViewController: UIViewController {
+    
+    // MARK: - Varibales globales
+    var variables = GlobalUserData()
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -86,7 +86,11 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="SUY-cQ-Bp8">
-                        <barButtonItem key="rightBarButtonItem" title="Logout" id="QNH-0N-f6b"/>
+                        <barButtonItem key="rightBarButtonItem" title="Logout" id="QNH-0N-f6b">
+                            <connections>
+                                <segue destination="7w1-wa-mja" kind="unwind" unwindAction="cerraVCsWithSegue:" id="HRX-3r-zh4"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Exd-Mt-gna" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -96,7 +100,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AppNavigation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="AppNavigation" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -121,7 +125,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="8AP-i4-5Tk" kind="show" id="o8u-kp-KEp"/>
+                                    <segue destination="8AP-i4-5Tk" kind="show" identifier="segueV2" id="o8u-kp-KEp"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -129,8 +133,13 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="oFM-Q6-rd2"/>
+                    <connections>
+                        <outlet property="appellidoTF" destination="wz5-3d-WpP" id="bBZ-LF-8X6"/>
+                        <outlet property="nombreTF" destination="9ef-3y-253" id="D7J-ch-AFK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="7w1-wa-mja" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="997.10144927536237" y="114.50892857142857"/>
         </scene>
@@ -224,15 +233,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nombre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pgj-wO-crU">
-                                <rect key="frame" x="20" y="111" width="374" height="34"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Apellido" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bQV-Lm-PDw">
+                                <rect key="frame" x="20" y="161" width="374" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Apellido" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bQV-Lm-PDw">
-                                <rect key="frame" x="20" y="161" width="374" height="34"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="La edad de mi perro es:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IYf-eT-hJq">
+                                <rect key="frame" x="23" y="418" width="374" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -242,7 +251,7 @@
                                 <rect key="frame" x="20" y="237" width="374" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Direccion" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fwb-GT-gdl">
                                 <rect key="frame" x="20" y="296" width="374" height="34"/>
@@ -257,13 +266,23 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pIu-ig-eln">
-                                <rect key="frame" x="26" y="418" width="368" height="30"/>
+                                <rect key="frame" x="26" y="478" width="368" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.47438120979999998" green="0.82087338620000005" blue="0.99557667969999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Calcula la edad de tu perro">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="calculoEdadPerroACTION:" destination="8AP-i4-5Tk" eventType="touchUpInside" id="jyW-X3-4pH"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nombre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pgj-wO-crU">
+                                <rect key="frame" x="20" y="114" width="374" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="0Xk-sc-Xtl"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -271,10 +290,18 @@
                     <navigationItem key="navigationItem" id="S3x-8E-cwC">
                         <barButtonItem key="rightBarButtonItem" title="ir a ventana 3" id="AY1-ca-oTC">
                             <connections>
-                                <segue destination="HfJ-hw-q8W" kind="show" id="Lgu-b3-5lt"/>
+                                <segue destination="HfJ-hw-q8W" kind="show" identifier="segueV3" id="Lgu-b3-5lt"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="apellidoLBL" destination="bQV-Lm-PDw" id="eFN-7j-lvZ"/>
+                        <outlet property="calculoEdadPerroTF" destination="Wfb-2x-3RS" id="H9E-CZ-cH4"/>
+                        <outlet property="direccionTF" destination="fwb-GT-gdl" id="fMH-On-BuC"/>
+                        <outlet property="edadPerroLBL" destination="IYf-eT-hJq" id="hl3-KZ-f6t"/>
+                        <outlet property="movilTF" destination="oeg-kN-wmC" id="Pgx-oz-vBi"/>
+                        <outlet property="nombreLBL" destination="Pgj-wO-crU" id="fBm-uv-YBK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cOC-VY-Slz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
