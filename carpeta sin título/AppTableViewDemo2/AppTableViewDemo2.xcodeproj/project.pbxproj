@@ -11,13 +11,25 @@
 		B48F5EC826B2830200DC60F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B48F5EC726B2830200DC60F0 /* Assets.xcassets */; };
 		B48F5ECB26B2830200DC60F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B48F5EC926B2830200DC60F0 /* LaunchScreen.storyboard */; };
 		B48F5EDA26B284BF00DC60F0 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48F5ED926B284BF00DC60F0 /* AppCoordinator.swift */; };
-		B48F5EE026B2852600DC60F0 /* ListaCochesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48F5EDE26B2852600DC60F0 /* ListaCochesViewController.swift */; };
-		B48F5EE126B2852600DC60F0 /* ListaCochesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B48F5EDF26B2852600DC60F0 /* ListaCochesViewController.xib */; };
-		B48F5EE526B2855900DC60F0 /* ListaCochesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48F5EE426B2855900DC60F0 /* ListaCochesCoordinator.swift */; };
-		B48F5EE826B286CC00DC60F0 /* ListaCochesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48F5EE726B286CC00DC60F0 /* ListaCochesPresenter.swift */; };
 		B48F5EEC26B2888100DC60F0 /* CochesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48F5EEB26B2888100DC60F0 /* CochesModel.swift */; };
-		B48F5EF126B297B900DC60F0 /* CochesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48F5EEF26B297B900DC60F0 /* CochesTableViewCell.swift */; };
-		B48F5EF226B297B900DC60F0 /* CochesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B48F5EF026B297B900DC60F0 /* CochesTableViewCell.xib */; };
+		B4D4464C26B2A8A5006FAF72 /* ListaCochesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D4464526B2A8A5006FAF72 /* ListaCochesCoordinator.swift */; };
+		B4D4464D26B2A8A5006FAF72 /* CochesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4D4464726B2A8A5006FAF72 /* CochesTableViewCell.xib */; };
+		B4D4464E26B2A8A5006FAF72 /* CochesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D4464826B2A8A5006FAF72 /* CochesTableViewCell.swift */; };
+		B4D4464F26B2A8A5006FAF72 /* ListaCochesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D4464926B2A8A5006FAF72 /* ListaCochesViewController.swift */; };
+		B4D4465026B2A8A5006FAF72 /* ListaCochesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4D4464A26B2A8A5006FAF72 /* ListaCochesViewController.xib */; };
+		B4D4465126B2A8A5006FAF72 /* ListaCochesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D4464B26B2A8A5006FAF72 /* ListaCochesPresenter.swift */; };
+		B4D4465626B2A90D006FAF72 /* PerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D4465426B2A90C006FAF72 /* PerfilViewController.swift */; };
+		B4D4465726B2A90D006FAF72 /* PerfilViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4D4465526B2A90D006FAF72 /* PerfilViewController.xib */; };
+		B4D4465C26B2A94B006FAF72 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D4465A26B2A94B006FAF72 /* HomeViewController.swift */; };
+		B4D4465D26B2A94B006FAF72 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4D4465B26B2A94B006FAF72 /* HomeViewController.xib */; };
+		B4D4466026B2A981006FAF72 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D4465F26B2A981006FAF72 /* HomeCoordinator.swift */; };
+		B4D4466326B2AAEF006FAF72 /* PerfilCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D4466226B2AAEF006FAF72 /* PerfilCoordinator.swift */; };
+		B4D4466626B2AB00006FAF72 /* PerfilPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D4466526B2AB00006FAF72 /* PerfilPresenter.swift */; };
+		B4D4466B26B2B25B006FAF72 /* PerfilTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D4466926B2B25B006FAF72 /* PerfilTableViewCell.swift */; };
+		B4D4466C26B2B25B006FAF72 /* PerfilTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4D4466A26B2B25B006FAF72 /* PerfilTableViewCell.xib */; };
+		B4D4467026B2B95B006FAF72 /* PerfilModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D4466F26B2B95B006FAF72 /* PerfilModel.swift */; };
+		B4D4467426B2CEFE006FAF72 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D4467226B2CEFE006FAF72 /* PostTableViewCell.swift */; };
+		B4D4467526B2CEFE006FAF72 /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4D4467326B2CEFE006FAF72 /* PostTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,13 +39,25 @@
 		B48F5ECA26B2830200DC60F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B48F5ECC26B2830200DC60F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B48F5ED926B284BF00DC60F0 /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
-		B48F5EDE26B2852600DC60F0 /* ListaCochesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaCochesViewController.swift; sourceTree = "<group>"; };
-		B48F5EDF26B2852600DC60F0 /* ListaCochesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListaCochesViewController.xib; sourceTree = "<group>"; };
-		B48F5EE426B2855900DC60F0 /* ListaCochesCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaCochesCoordinator.swift; sourceTree = "<group>"; };
-		B48F5EE726B286CC00DC60F0 /* ListaCochesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaCochesPresenter.swift; sourceTree = "<group>"; };
 		B48F5EEB26B2888100DC60F0 /* CochesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CochesModel.swift; sourceTree = "<group>"; };
-		B48F5EEF26B297B900DC60F0 /* CochesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CochesTableViewCell.swift; sourceTree = "<group>"; };
-		B48F5EF026B297B900DC60F0 /* CochesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CochesTableViewCell.xib; sourceTree = "<group>"; };
+		B4D4464526B2A8A5006FAF72 /* ListaCochesCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListaCochesCoordinator.swift; sourceTree = "<group>"; };
+		B4D4464726B2A8A5006FAF72 /* CochesTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CochesTableViewCell.xib; sourceTree = "<group>"; };
+		B4D4464826B2A8A5006FAF72 /* CochesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CochesTableViewCell.swift; sourceTree = "<group>"; };
+		B4D4464926B2A8A5006FAF72 /* ListaCochesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListaCochesViewController.swift; sourceTree = "<group>"; };
+		B4D4464A26B2A8A5006FAF72 /* ListaCochesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListaCochesViewController.xib; sourceTree = "<group>"; };
+		B4D4464B26B2A8A5006FAF72 /* ListaCochesPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListaCochesPresenter.swift; sourceTree = "<group>"; };
+		B4D4465426B2A90C006FAF72 /* PerfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilViewController.swift; sourceTree = "<group>"; };
+		B4D4465526B2A90D006FAF72 /* PerfilViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PerfilViewController.xib; sourceTree = "<group>"; };
+		B4D4465A26B2A94B006FAF72 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		B4D4465B26B2A94B006FAF72 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		B4D4465F26B2A981006FAF72 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		B4D4466226B2AAEF006FAF72 /* PerfilCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilCoordinator.swift; sourceTree = "<group>"; };
+		B4D4466526B2AB00006FAF72 /* PerfilPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilPresenter.swift; sourceTree = "<group>"; };
+		B4D4466926B2B25B006FAF72 /* PerfilTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilTableViewCell.swift; sourceTree = "<group>"; };
+		B4D4466A26B2B25B006FAF72 /* PerfilTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PerfilTableViewCell.xib; sourceTree = "<group>"; };
+		B4D4466F26B2B95B006FAF72 /* PerfilModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilModel.swift; sourceTree = "<group>"; };
+		B4D4467226B2CEFE006FAF72 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		B4D4467326B2CEFE006FAF72 /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,11 +120,9 @@
 		B48F5EDD26B284F900DC60F0 /* Sections */ = {
 			isa = PBXGroup;
 			children = (
-				B48F5EEE26B2979900DC60F0 /* Cell */,
-				B48F5EDE26B2852600DC60F0 /* ListaCochesViewController.swift */,
-				B48F5EDF26B2852600DC60F0 /* ListaCochesViewController.xib */,
-				B48F5EE426B2855900DC60F0 /* ListaCochesCoordinator.swift */,
-				B48F5EE726B286CC00DC60F0 /* ListaCochesPresenter.swift */,
+				B4D4465926B2A91C006FAF72 /* TabBar */,
+				B4D4465326B2A8E3006FAF72 /* Perfil */,
+				B4D4464426B2A8A5006FAF72 /* ListaCoches */,
 			);
 			path = Sections;
 			sourceTree = "<group>";
@@ -109,15 +131,61 @@
 			isa = PBXGroup;
 			children = (
 				B48F5EEB26B2888100DC60F0 /* CochesModel.swift */,
+				B4D4466F26B2B95B006FAF72 /* PerfilModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
 		};
-		B48F5EEE26B2979900DC60F0 /* Cell */ = {
+		B4D4464426B2A8A5006FAF72 /* ListaCoches */ = {
 			isa = PBXGroup;
 			children = (
-				B48F5EEF26B297B900DC60F0 /* CochesTableViewCell.swift */,
-				B48F5EF026B297B900DC60F0 /* CochesTableViewCell.xib */,
+				B4D4464526B2A8A5006FAF72 /* ListaCochesCoordinator.swift */,
+				B4D4464626B2A8A5006FAF72 /* Cell */,
+				B4D4464926B2A8A5006FAF72 /* ListaCochesViewController.swift */,
+				B4D4464A26B2A8A5006FAF72 /* ListaCochesViewController.xib */,
+				B4D4464B26B2A8A5006FAF72 /* ListaCochesPresenter.swift */,
+			);
+			path = ListaCoches;
+			sourceTree = "<group>";
+		};
+		B4D4464626B2A8A5006FAF72 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				B4D4464726B2A8A5006FAF72 /* CochesTableViewCell.xib */,
+				B4D4464826B2A8A5006FAF72 /* CochesTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		B4D4465326B2A8E3006FAF72 /* Perfil */ = {
+			isa = PBXGroup;
+			children = (
+				B4D4466826B2B1F5006FAF72 /* Cell */,
+				B4D4465426B2A90C006FAF72 /* PerfilViewController.swift */,
+				B4D4465526B2A90D006FAF72 /* PerfilViewController.xib */,
+				B4D4466226B2AAEF006FAF72 /* PerfilCoordinator.swift */,
+				B4D4466526B2AB00006FAF72 /* PerfilPresenter.swift */,
+			);
+			path = Perfil;
+			sourceTree = "<group>";
+		};
+		B4D4465926B2A91C006FAF72 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				B4D4465A26B2A94B006FAF72 /* HomeViewController.swift */,
+				B4D4465B26B2A94B006FAF72 /* HomeViewController.xib */,
+				B4D4465F26B2A981006FAF72 /* HomeCoordinator.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		B4D4466826B2B1F5006FAF72 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				B4D4466926B2B25B006FAF72 /* PerfilTableViewCell.swift */,
+				B4D4466A26B2B25B006FAF72 /* PerfilTableViewCell.xib */,
+				B4D4467226B2CEFE006FAF72 /* PostTableViewCell.swift */,
+				B4D4467326B2CEFE006FAF72 /* PostTableViewCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -179,10 +247,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B48F5EF226B297B900DC60F0 /* CochesTableViewCell.xib in Resources */,
 				B48F5ECB26B2830200DC60F0 /* LaunchScreen.storyboard in Resources */,
-				B48F5EE126B2852600DC60F0 /* ListaCochesViewController.xib in Resources */,
+				B4D4466C26B2B25B006FAF72 /* PerfilTableViewCell.xib in Resources */,
+				B4D4465726B2A90D006FAF72 /* PerfilViewController.xib in Resources */,
 				B48F5EC826B2830200DC60F0 /* Assets.xcassets in Resources */,
+				B4D4464D26B2A8A5006FAF72 /* CochesTableViewCell.xib in Resources */,
+				B4D4465026B2A8A5006FAF72 /* ListaCochesViewController.xib in Resources */,
+				B4D4465D26B2A94B006FAF72 /* HomeViewController.xib in Resources */,
+				B4D4467526B2CEFE006FAF72 /* PostTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,12 +265,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4D4464E26B2A8A5006FAF72 /* CochesTableViewCell.swift in Sources */,
+				B4D4464F26B2A8A5006FAF72 /* ListaCochesViewController.swift in Sources */,
+				B4D4467426B2CEFE006FAF72 /* PostTableViewCell.swift in Sources */,
 				B48F5EEC26B2888100DC60F0 /* CochesModel.swift in Sources */,
-				B48F5EE826B286CC00DC60F0 /* ListaCochesPresenter.swift in Sources */,
+				B4D4464C26B2A8A5006FAF72 /* ListaCochesCoordinator.swift in Sources */,
 				B48F5EDA26B284BF00DC60F0 /* AppCoordinator.swift in Sources */,
-				B48F5EE526B2855900DC60F0 /* ListaCochesCoordinator.swift in Sources */,
-				B48F5EF126B297B900DC60F0 /* CochesTableViewCell.swift in Sources */,
-				B48F5EE026B2852600DC60F0 /* ListaCochesViewController.swift in Sources */,
+				B4D4465C26B2A94B006FAF72 /* HomeViewController.swift in Sources */,
+				B4D4465126B2A8A5006FAF72 /* ListaCochesPresenter.swift in Sources */,
+				B4D4466326B2AAEF006FAF72 /* PerfilCoordinator.swift in Sources */,
+				B4D4466B26B2B25B006FAF72 /* PerfilTableViewCell.swift in Sources */,
+				B4D4466026B2A981006FAF72 /* HomeCoordinator.swift in Sources */,
+				B4D4465626B2A90D006FAF72 /* PerfilViewController.swift in Sources */,
+				B4D4467026B2B95B006FAF72 /* PerfilModel.swift in Sources */,
+				B4D4466626B2AB00006FAF72 /* PerfilPresenter.swift in Sources */,
 				B48F5EBF26B2830100DC60F0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -217,7 +297,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		B48F5ECD26B2830200DC60F0 /* Debug */ = {
+		B48F5ECD26B2830200DC60F0 /* DEV */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -276,9 +356,9 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
-			name = Debug;
+			name = DEV;
 		};
-		B48F5ECE26B2830200DC60F0 /* Release */ = {
+		B48F5ECE26B2830200DC60F0 /* PRE */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -331,9 +411,9 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
-			name = Release;
+			name = PRE;
 		};
-		B48F5ED026B2830200DC60F0 /* Debug */ = {
+		B48F5ED026B2830200DC60F0 /* DEV */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -345,14 +425,15 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.icologic.iOS.AppTableViewDemo2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.icologic.iOS.AppTableViewDemo2.DEV;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEV;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
-			name = Debug;
+			name = DEV;
 		};
-		B48F5ED126B2830200DC60F0 /* Release */ = {
+		B48F5ED126B2830200DC60F0 /* PRE */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -364,12 +445,88 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.icologic.iOS.AppTableViewDemo2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.icologic.iOS.AppTableViewDemo2.PRE;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = PRE;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
-			name = Release;
+			name = PRE;
+		};
+		B48F5EF426B2A44A00DC60F0 /* PRO */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = PRO;
+		};
+		B48F5EF526B2A44A00DC60F0 /* PRO */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2C7W4RF846;
+				INFOPLIST_FILE = AppTableViewDemo2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.icologic.iOS.AppTableViewDemo2.PRO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = PRO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = PRO;
 		};
 /* End XCBuildConfiguration section */
 
@@ -377,20 +534,22 @@
 		B48F5EB626B2830100DC60F0 /* Build configuration list for PBXProject "AppTableViewDemo2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B48F5ECD26B2830200DC60F0 /* Debug */,
-				B48F5ECE26B2830200DC60F0 /* Release */,
+				B48F5ECD26B2830200DC60F0 /* DEV */,
+				B48F5ECE26B2830200DC60F0 /* PRE */,
+				B48F5EF426B2A44A00DC60F0 /* PRO */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = PRE;
 		};
 		B48F5ECF26B2830200DC60F0 /* Build configuration list for PBXNativeTarget "AppTableViewDemo2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B48F5ED026B2830200DC60F0 /* Debug */,
-				B48F5ED126B2830200DC60F0 /* Release */,
+				B48F5ED026B2830200DC60F0 /* DEV */,
+				B48F5ED126B2830200DC60F0 /* PRE */,
+				B48F5EF526B2A44A00DC60F0 /* PRO */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = PRE;
 		};
 /* End XCConfigurationList section */
 	};

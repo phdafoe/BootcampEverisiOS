@@ -28,30 +28,20 @@ POSSIBILITY OF SUCH DAMAGE.
 import Foundation
 import UIKit
 
-protocol AppCoordinatorProtocolo {
-    func showInitialVC(window: UIWindow)
-}
-
-final class AppCoordinator: AppCoordinatorProtocolo {
+final class PerfilCoordinator {
     
-    private var initialViewController = UIViewController()
-    
-    internal func showInitialVC(window: UIWindow) {
-        self.customUI()
-        initialViewController = HomeCoordinator.view()
-        window.rootViewController = initialViewController
-        window.makeKeyAndVisible()
+    static func navigation() -> UINavigationController {
+        UINavigationController(rootViewController: view())
     }
     
-    private func customUI() {
-        let navBar = UINavigationBar.appearance()
-        let tabBar = UITabBar.appearance()
-        
-        navBar.barTintColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
-        tabBar.barTintColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
-        tabBar.tintColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
-        navBar.barStyle = .default
-        
-        navBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)]
+    static func view() -> PerfilViewController {
+        let vc = PerfilViewController()
+        vc.presenter = presenter(vc: vc)
+        return vc
+    }
+    
+    static func presenter(vc: PerfilViewController) -> PerfilPresenterProtocol {
+        let presenter = PerfilPresenter(vc: vc)
+        return presenter
     }
 }
