@@ -31,7 +31,6 @@ protocol ListaCochesViewProtocol {
     func reloadData()
 }
 
-
 class ListaCochesViewController: UIViewController {
     
     // MARK: - ID
@@ -51,6 +50,7 @@ class ListaCochesViewController: UIViewController {
     private func setupTableView() {
         self.myTableViewCoches.delegate = self
         self.myTableViewCoches.dataSource = self
+        self.myTableViewCoches.register(UINib(nibName: "CochesTableViewCell", bundle: nil), forCellReuseIdentifier: "CochesTableViewCell")
     }
 
 }
@@ -68,7 +68,15 @@ extension ListaCochesViewController: UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        let cellCoches = self.myTableViewCoches.dequeueReusableCell(withIdentifier: "CochesTableViewCell", for: indexPath) as! CochesTableViewCell
+        if let modelData = self.presenter?.getInformationCellForRow(indexPath: indexPath.row){
+            cellCoches.configCell(model: modelData)
+        }
+        return cellCoches
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 90
     }
     
 }

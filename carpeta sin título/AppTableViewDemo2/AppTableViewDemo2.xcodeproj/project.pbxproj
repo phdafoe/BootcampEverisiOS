@@ -16,6 +16,8 @@
 		B48F5EE526B2855900DC60F0 /* ListaCochesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48F5EE426B2855900DC60F0 /* ListaCochesCoordinator.swift */; };
 		B48F5EE826B286CC00DC60F0 /* ListaCochesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48F5EE726B286CC00DC60F0 /* ListaCochesPresenter.swift */; };
 		B48F5EEC26B2888100DC60F0 /* CochesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48F5EEB26B2888100DC60F0 /* CochesModel.swift */; };
+		B48F5EF126B297B900DC60F0 /* CochesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48F5EEF26B297B900DC60F0 /* CochesTableViewCell.swift */; };
+		B48F5EF226B297B900DC60F0 /* CochesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B48F5EF026B297B900DC60F0 /* CochesTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		B48F5EE426B2855900DC60F0 /* ListaCochesCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaCochesCoordinator.swift; sourceTree = "<group>"; };
 		B48F5EE726B286CC00DC60F0 /* ListaCochesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaCochesPresenter.swift; sourceTree = "<group>"; };
 		B48F5EEB26B2888100DC60F0 /* CochesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CochesModel.swift; sourceTree = "<group>"; };
+		B48F5EEF26B297B900DC60F0 /* CochesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CochesTableViewCell.swift; sourceTree = "<group>"; };
+		B48F5EF026B297B900DC60F0 /* CochesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CochesTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +96,7 @@
 		B48F5EDD26B284F900DC60F0 /* Sections */ = {
 			isa = PBXGroup;
 			children = (
+				B48F5EEE26B2979900DC60F0 /* Cell */,
 				B48F5EDE26B2852600DC60F0 /* ListaCochesViewController.swift */,
 				B48F5EDF26B2852600DC60F0 /* ListaCochesViewController.xib */,
 				B48F5EE426B2855900DC60F0 /* ListaCochesCoordinator.swift */,
@@ -106,6 +111,15 @@
 				B48F5EEB26B2888100DC60F0 /* CochesModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		B48F5EEE26B2979900DC60F0 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				B48F5EEF26B297B900DC60F0 /* CochesTableViewCell.swift */,
+				B48F5EF026B297B900DC60F0 /* CochesTableViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,6 +179,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B48F5EF226B297B900DC60F0 /* CochesTableViewCell.xib in Resources */,
 				B48F5ECB26B2830200DC60F0 /* LaunchScreen.storyboard in Resources */,
 				B48F5EE126B2852600DC60F0 /* ListaCochesViewController.xib in Resources */,
 				B48F5EC826B2830200DC60F0 /* Assets.xcassets in Resources */,
@@ -182,6 +197,7 @@
 				B48F5EE826B286CC00DC60F0 /* ListaCochesPresenter.swift in Sources */,
 				B48F5EDA26B284BF00DC60F0 /* AppCoordinator.swift in Sources */,
 				B48F5EE526B2855900DC60F0 /* ListaCochesCoordinator.swift in Sources */,
+				B48F5EF126B297B900DC60F0 /* CochesTableViewCell.swift in Sources */,
 				B48F5EE026B2852600DC60F0 /* ListaCochesViewController.swift in Sources */,
 				B48F5EBF26B2830100DC60F0 /* AppDelegate.swift in Sources */,
 			);
