@@ -28,17 +28,19 @@ POSSIBILITY OF SUCH DAMAGE.
 import Foundation
 import UIKit
 
-protocol AppCoordinatorProtocolo {
-    func showInitialVC(window: UIWindow)
-}
-
-final class AppCoordinator: AppCoordinatorProtocolo {
+final class ListaCochesCoordinator {
     
-    private var initialViewController = UIViewController()
-    
-    internal func showInitialVC(window: UIWindow) {
-        initialViewController = TableMonthCoordinator.navigation()
-        window.rootViewController = initialViewController
-        window.makeKeyAndVisible()
+    static func navigation() -> UINavigationController {
+        UINavigationController(rootViewController: view())
     }
+    
+    static func view() -> ListaCochesViewController {
+        let vc = ListaCochesViewController()
+        return vc
+    }
+    
+//    static func presenter() -> ListaCochesPresenterProtocol {
+//        let presenter = ListaCochesPresenter()
+//        return presenter
+//    }
 }

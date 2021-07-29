@@ -25,20 +25,60 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 POSSIBILITY OF SUCH DAMAGE.
 */
 
-import Foundation
 import UIKit
 
-protocol AppCoordinatorProtocolo {
-    func showInitialVC(window: UIWindow)
+protocol ListaCochesViewProtocol {
+    func reloadData()
 }
 
-final class AppCoordinator: AppCoordinatorProtocolo {
+
+class ListaCochesViewController: UIViewController {
     
-    private var initialViewController = UIViewController()
+    // MARK: - ID
+    var presenter: ListaCochesPresenterProtocol = ListaCochesPresenter()
     
-    internal func showInitialVC(window: UIWindow) {
-        initialViewController = TableMonthCoordinator.navigation()
-        window.rootViewController = initialViewController
-        window.makeKeyAndVisible()
+    // MARK: - Outlets
+    @IBOutlet weak var myTableViewCoches: UITableView!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setupTableView()
+        self.presenter.setArrayData()
+
+        // Do any additional setup after loading the view.
+    }
+    
+    private func setupTableView() {
+        self.myTableViewCoches.delegate = self
+        self.myTableViewCoches.dataSource = self
+    }
+
+}
+
+extension ListaCochesViewController: ListaCochesViewProtocol{
+    func reloadData() {
+        self.myTableViewCoches.reloadData()
     }
 }
+
+extension ListaCochesViewController: UITableViewDataSource{
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.presenter.numberOfRowCell()
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        return UITableViewCell()
+    }
+    
+}
+
+extension ListaCochesViewController: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        //
+    }
+}
+
+
+

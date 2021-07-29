@@ -27,7 +27,7 @@ class TableMonthViewController: UIViewController {
     }
 }
 
-
+// MARK: - TableMonthViewController: UITableViewDelegate
 extension TableMonthViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -38,15 +38,14 @@ extension TableMonthViewController: UITableViewDelegate {
         
         self.navigationController?.pushViewController(vc, animated: true)
     }
-    
-    
 }
 
+// MARK: - TableMonthViewController: UITableViewDataSource
 extension TableMonthViewController: UITableViewDataSource {
     
-//    func numberOfSections(in tableView: UITableView) -> Int {
-//        return 1
-//    }
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.arrayMonths.count

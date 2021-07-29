@@ -37,7 +37,7 @@ final class AppCoordinator: AppCoordinatorProtocolo {
     private var initialViewController = UIViewController()
     
     internal func showInitialVC(window: UIWindow) {
-        initialViewController = TableMonthCoordinator.navigation()
+        initialViewController = ListaCochesCoordinator.navigation()
         window.rootViewController = initialViewController
         window.makeKeyAndVisible()
     }

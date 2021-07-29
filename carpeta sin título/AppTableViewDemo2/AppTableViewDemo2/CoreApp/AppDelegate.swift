@@ -25,20 +25,24 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 POSSIBILITY OF SUCH DAMAGE.
 */
 
-import Foundation
 import UIKit
 
-protocol AppCoordinatorProtocolo {
-    func showInitialVC(window: UIWindow)
+@main
+class AppDelegate: UIResponder, UIApplicationDelegate {
+
+
+    var window: UIWindow?
+    let appCoordinator: AppCoordinatorProtocolo = AppCoordinator()
+
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        window = UIWindow(frame: UIScreen.main.bounds)
+        if let windowDes = window{
+            appCoordinator.showInitialVC(window: windowDes)
+        }
+        return true
+    }
+
+
+
 }
 
-final class AppCoordinator: AppCoordinatorProtocolo {
-    
-    private var initialViewController = UIViewController()
-    
-    internal func showInitialVC(window: UIWindow) {
-        initialViewController = TableMonthCoordinator.navigation()
-        window.rootViewController = initialViewController
-        window.makeKeyAndVisible()
-    }
-}
