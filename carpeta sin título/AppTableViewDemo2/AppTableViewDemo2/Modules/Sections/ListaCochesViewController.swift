@@ -35,16 +35,16 @@ protocol ListaCochesViewProtocol {
 class ListaCochesViewController: UIViewController {
     
     // MARK: - ID
-    var presenter: ListaCochesPresenterProtocol = ListaCochesPresenter()
+    var presenter: ListaCochesPresenterProtocol?
     
     // MARK: - Outlets
     @IBOutlet weak var myTableViewCoches: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.presenter?.setArrayData()
         setupTableView()
-        self.presenter.setArrayData()
-
+        
         // Do any additional setup after loading the view.
     }
     
@@ -64,7 +64,7 @@ extension ListaCochesViewController: ListaCochesViewProtocol{
 extension ListaCochesViewController: UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.presenter.numberOfRowCell()
+        return self.presenter?.numberOfRowCell() ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

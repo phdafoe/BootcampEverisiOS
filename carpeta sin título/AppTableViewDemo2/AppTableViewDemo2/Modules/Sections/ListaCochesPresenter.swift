@@ -11,22 +11,25 @@ import UIKit
 protocol ListaCochesPresenterProtocol {
     func setArrayData()
     func numberOfRowCell() -> Int
-    
 }
 
 final class ListaCochesPresenter {
     
-    let vc: ListaCochesViewProtocol = ListaCochesViewController()
+    var arrayCoches = [CochesModel]()
+    let vc: ListaCochesViewController?
     
-    var arrayCoches: [CochesModel] = []
-    
+    init(vc: ListaCochesViewController) {
+        self.vc = vc
+    }
+
 }
 
 extension ListaCochesPresenter: ListaCochesPresenterProtocol {
     
     func setArrayData() {
+        
         self.arrayCoches = [CochesModel(name: "Audi", color: "Rojo", image: UIImage(named: "audi"))]
-        self.vc.reloadData()
+        self.vc?.reloadData()
     }
     
     func numberOfRowCell() -> Int {
