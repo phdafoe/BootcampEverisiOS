@@ -8,7 +8,8 @@
 import Foundation
 
 protocol DetalleContactoPresenterProtocol {
-    
+    func getDataModel()
+    func informationData() -> ArrayContact?
 }
 
 final class DetalleContactoPresenter {
@@ -24,5 +25,12 @@ final class DetalleContactoPresenter {
 }
 
 extension DetalleContactoPresenter: DetalleContactoPresenterProtocol{
+    func getDataModel() {
+        self.vc?.reloadDataModel()
+    }
+
     
+    func informationData() -> ArrayContact? {
+        return modelData
+    }
 }
