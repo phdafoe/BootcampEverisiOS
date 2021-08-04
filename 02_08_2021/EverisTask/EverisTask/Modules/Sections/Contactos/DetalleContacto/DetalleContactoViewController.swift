@@ -29,7 +29,7 @@ class DetalleContactoViewController: UIViewController {
     private func setupTableView() {
         self.detalleContactosTableView.delegate = self
         self.detalleContactosTableView.dataSource = self
-        self.detalleContactosTableView.register(UINib(nibName: "ContactosCell", bundle: nil), forCellReuseIdentifier: "ContactosCell")
+        self.detalleContactosTableView.register(UINib(nibName: "DetallePerfilCell", bundle: nil), forCellReuseIdentifier: "DetallePerfilCell")
     }
 
 
@@ -48,22 +48,18 @@ extension DetalleContactoViewController: UITableViewDelegate, UITableViewDataSou
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cellContactos = self.detalleContactosTableView.dequeueReusableCell(withIdentifier: "ContactosCell", for: indexPath) as! ContactosCell
+        let cellContactos = self.detalleContactosTableView.dequeueReusableCell(withIdentifier: "DetallePerfilCell", for: indexPath) as! DetallePerfilCell
         if let modelData = self.presenter?.informationData(){
-            cellContactos.ceonfigCell(data: modelData)
+            cellContactos.configCell(model: modelData)
         }
         return cellContactos
     }
     
-//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-//        return 70
-//    }
-//
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        if let modelData = self.presenter?.informationCell(indexPath: indexPath.row){
-//            self.presenter?.showDetailContacto(dto: modelData)
-//        }
-//    }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        
+        UITableView.automaticDimension
+    }
+    
 }
 
 
