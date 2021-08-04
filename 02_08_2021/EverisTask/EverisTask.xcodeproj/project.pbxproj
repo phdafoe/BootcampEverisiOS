@@ -32,6 +32,8 @@
 		B446D37826BA8B3500EC4861 /* ListaTareasViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B446D37626BA8B3500EC4861 /* ListaTareasViewController.xib */; };
 		B446D37C26BA8CDF00EC4861 /* ListaTareaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B446D37A26BA8CDF00EC4861 /* ListaTareaCell.swift */; };
 		B446D37D26BA8CDF00EC4861 /* ListaTareaCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B446D37B26BA8CDF00EC4861 /* ListaTareaCell.xib */; };
+		B446D39226BA9E4700EC4861 /* CategoriaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B446D39026BA9E4700EC4861 /* CategoriaViewController.swift */; };
+		B446D39326BA9E4700EC4861 /* CategoriaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B446D39126BA9E4700EC4861 /* CategoriaViewController.xib */; };
 		B46B299C26B80EE700A1203A /* DetalleContactoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46B299A26B80EE700A1203A /* DetalleContactoViewController.swift */; };
 		B46B299D26B80EE700A1203A /* DetalleContactoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B46B299B26B80EE700A1203A /* DetalleContactoViewController.xib */; };
 		B46B29A026B80EFD00A1203A /* DetalleContactoCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46B299F26B80EFD00A1203A /* DetalleContactoCoordinator.swift */; };
@@ -68,6 +70,8 @@
 		B446D37626BA8B3500EC4861 /* ListaTareasViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListaTareasViewController.xib; sourceTree = "<group>"; };
 		B446D37A26BA8CDF00EC4861 /* ListaTareaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaTareaCell.swift; sourceTree = "<group>"; };
 		B446D37B26BA8CDF00EC4861 /* ListaTareaCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListaTareaCell.xib; sourceTree = "<group>"; };
+		B446D39026BA9E4700EC4861 /* CategoriaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriaViewController.swift; sourceTree = "<group>"; };
+		B446D39126BA9E4700EC4861 /* CategoriaViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoriaViewController.xib; sourceTree = "<group>"; };
 		B46B299A26B80EE700A1203A /* DetalleContactoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleContactoViewController.swift; sourceTree = "<group>"; };
 		B46B299B26B80EE700A1203A /* DetalleContactoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetalleContactoViewController.xib; sourceTree = "<group>"; };
 		B46B299F26B80EFD00A1203A /* DetalleContactoCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleContactoCoordinator.swift; sourceTree = "<group>"; };
@@ -184,6 +188,7 @@
 		B400B9DE26B7F2810095C25A /* NuevaTarea */ = {
 			isa = PBXGroup;
 			children = (
+				B446D38926BA9DFE00EC4861 /* Categoria */,
 				B446D36926BA79CC00EC4861 /* NuevaTareaViewController.swift */,
 				B446D36A26BA79CC00EC4861 /* NuevaTareaViewController.xib */,
 				B446D36E26BA79E000EC4861 /* NuevaTareaCoordinator.swift */,
@@ -232,6 +237,15 @@
 				B446D37226BA7F8000EC4861 /* Utils.swift */,
 			);
 			path = "Utils+Helpers";
+			sourceTree = "<group>";
+		};
+		B446D38926BA9DFE00EC4861 /* Categoria */ = {
+			isa = PBXGroup;
+			children = (
+				B446D39026BA9E4700EC4861 /* CategoriaViewController.swift */,
+				B446D39126BA9E4700EC4861 /* CategoriaViewController.xib */,
+			);
+			path = Categoria;
 			sourceTree = "<group>";
 		};
 		B46B29A226B8122000A1203A /* DetalleContacto */ = {
@@ -313,6 +327,7 @@
 				B446D36C26BA79CC00EC4861 /* NuevaTareaViewController.xib in Resources */,
 				B400B9E326B7F2B00095C25A /* TabBarHomeViewController.xib in Resources */,
 				B400B9C826B7F1A60095C25A /* Assets.xcassets in Resources */,
+				B446D39326BA9E4700EC4861 /* CategoriaViewController.xib in Resources */,
 				B46B299D26B80EE700A1203A /* DetalleContactoViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -342,6 +357,7 @@
 				B446D37726BA8B3500EC4861 /* ListaTareasViewController.swift in Sources */,
 				B400B9F426B7FC420095C25A /* LIstaContactosViewController.swift in Sources */,
 				B446D36726BA76AB00EC4861 /* TaskModel.swift in Sources */,
+				B446D39226BA9E4700EC4861 /* CategoriaViewController.swift in Sources */,
 				B46B299C26B80EE700A1203A /* DetalleContactoViewController.swift in Sources */,
 				B446D36326BA699600EC4861 /* DetallePerfilCell.swift in Sources */,
 			);

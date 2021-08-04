@@ -52,11 +52,15 @@ class NuevaTareaViewController: UIViewController {
         
     }
     
+    @IBAction func muestraListaCategorias(_ sender: Any) {
+        let vc = CategoriaViewController()
+        vc.delegate = self
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         setupViews()
         // Do any additional setup after loading the view.
     }
@@ -164,6 +168,15 @@ extension NuevaTareaViewController: UIPickerViewDataSource, UIPickerViewDelegate
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
          myPrioridadNuevaTareaTF.text = arrayPrioridad[row]
+    }
+    
+}
+
+//MARK: - CategoriaViewControllerDelegate
+extension NuevaTareaViewController: CategoriaViewControllerDelegate {
+    
+    func nombreCategoriaSeleccionada(_ categoriaClass: CategoriaViewController, categoria row: String) {
+        self.myPresentaNuevaCategoriaLBL.text = row
     }
     
 }
