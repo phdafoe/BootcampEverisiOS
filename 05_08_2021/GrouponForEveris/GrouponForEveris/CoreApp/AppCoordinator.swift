@@ -21,4 +21,8 @@ final class AppCoordinator: AppCoordinatorProtocol{
         window.rootViewController = initialVC
         window.makeKeyAndVisible()
     }
+    
+    static let defaultHTTPHeader: [String: String] = {
+        return ["Authorization": URLEndpoint.bearerHeroku]
+    }()
 }
