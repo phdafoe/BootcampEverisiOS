@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 
+// Patron Arquitectonico -> 1
 class BaseViewController<P>: UIViewController {
     
     var presenter: P?
@@ -85,3 +86,6 @@ class BaseNavigation: UINavigationController {
         super.viewDidLoad()
     }
 }
+
+
+// Patron Arquitectonico -> 2
