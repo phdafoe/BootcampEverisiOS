@@ -229,14 +229,22 @@
 		B4E9619326BD1A9D007238AA /* SplashDos */ = {
 			isa = PBXGroup;
 			children = (
+				B4E961A526BD259F007238AA /* Coordinator */,
 				B4E9619426BD1AF9007238AA /* SplashDosViewController.swift */,
 				B4E9619526BD1AF9007238AA /* SplashDosViewController.xib */,
-				B4E9619926BD1B13007238AA /* SplashDosCoodinator.swift */,
 				B4E9619C26BD1B84007238AA /* SplashDosPresenter.swift */,
 				B4E9619F26BD1C47007238AA /* SplashDosInteractor.swift */,
 				B4E961A226BD1C89007238AA /* SplashDosRouter.swift */,
 			);
 			path = SplashDos;
+			sourceTree = "<group>";
+		};
+		B4E961A526BD259F007238AA /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				B4E9619926BD1B13007238AA /* SplashDosCoodinator.swift */,
+			);
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

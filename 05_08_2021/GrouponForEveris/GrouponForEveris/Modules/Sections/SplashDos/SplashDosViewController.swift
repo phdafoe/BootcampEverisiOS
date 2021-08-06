@@ -8,7 +8,7 @@
 import UIKit
 
 protocol SplashDosViewPresenterInterface: ViewPresenterInterface {
-
+    func reloadInformationInView()
 }
 
 class SplashDosViewController: UIViewController, ViewInterface {
@@ -17,11 +17,14 @@ class SplashDosViewController: UIViewController, ViewInterface {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.presenter.fetchData()
     }
 
 }
 
 extension SplashDosViewController: SplashDosViewPresenterInterface {
 
+    func reloadInformationInView() {
+        
+    }
 }
