@@ -33,6 +33,5 @@ extension SplashInteractor: SplashInteractorProtocol {
         } failure: { (error) in
             //
         }
-
     }
 }

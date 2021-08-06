@@ -11,7 +11,6 @@ protocol SplashViewControllerProtocol {
     func reloadInformationInView()
 }
 
-
 class SplashViewController: BaseViewController<SplashPresenterProtocol>, ReuseIdentifierViewController {
     
     
