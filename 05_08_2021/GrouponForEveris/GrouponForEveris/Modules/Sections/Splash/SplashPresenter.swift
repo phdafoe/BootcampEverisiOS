@@ -11,7 +11,6 @@ protocol SplashPresenterProtocol {
     func fetchDataFromPresent()
     func numberOfRowInsection() -> Int
     func informationForCell(indexPath: Int) -> CardDataViewModel?
-
 }
 
 protocol SplashInteractorOutputProtocol {
@@ -19,9 +18,7 @@ protocol SplashInteractorOutputProtocol {
 }
 
 class SplashPresenter: BasePresenter<SplashViewControllerProtocol, SplashRouterProtocol, SplashInteractorProtocol>{
-    
     var arrayData: [CardBusinessModel] = []
-
 }
 
 extension SplashPresenter: SplashPresenterProtocol{

@@ -13,7 +13,7 @@ final class SplashCoordinator {
         BaseNavigation(rootViewController: view())
     }
     
-    static func view() -> SplashViewController {
+    static func view() -> SplashViewController & SplashViewControllerProtocol {
         let vc = SplashViewController(nibName: SplashViewController.defaultReuseIdentifierViewController, bundle: nil)
         vc.presenter = presenter(vc: vc)
         return vc
