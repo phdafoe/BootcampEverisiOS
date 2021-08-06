@@ -17,7 +17,7 @@ final class AppCoordinator: AppCoordinatorProtocol{
     private var initialVC = UIViewController()
     
     internal func showInitialApp(window: UIWindow){
-        initialVC = SplashCoordinator.navigation()
+        initialVC = SplashDosCoodinator().navigation()
         window.rootViewController = initialVC
         window.makeKeyAndVisible()
     }
