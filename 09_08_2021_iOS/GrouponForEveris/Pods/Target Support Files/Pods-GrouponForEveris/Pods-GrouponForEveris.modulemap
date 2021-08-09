@@ -1,0 +1,6 @@
+framework module Pods_GrouponForEveris {
+  umbrella header "Pods-GrouponForEveris-umbrella.h"
+
+  export *
+  module * { export * }
+}
