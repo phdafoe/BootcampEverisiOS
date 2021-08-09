@@ -10,12 +10,12 @@ import UIKit
 
 final class HomeTabBarCoordinator {
     
-    static func homeTabBar(dto: [CardBusinessModel]? = nil) -> HomeTabBarViewController {
+    static func homeTabBar(dto: HomeTabBarCoordinatorDTO? = nil) -> HomeTabBarViewController {
         
         let homeTabViewController = HomeTabBarViewController(nibName: HomeTabBarViewController.defaultReuseIdentifierViewController, bundle: nil)
         
-        let listaVC = ListaGrouponCoordinator().navigation()
-        let customButton = UITabBarItem(title: "Mis Contactos",
+        let listaVC = ListaGrouponCoordinator().navigation(dto: ListaGrouponCoordinatorDTO(modelData: dto?.modelData))
+        let customButton = UITabBarItem(title: "Groupon Everis",
                                         image: UIImage(systemName: "house"),
                                         selectedImage: UIImage(systemName: "house"))
         listaVC.tabBarItem = customButton
@@ -28,5 +28,5 @@ final class HomeTabBarCoordinator {
 }
 
 struct HomeTabBarCoordinatorDTO {
-    var modelData: [CardBusinessModel]?
+    var modelData: [DataViewModel]?
 }

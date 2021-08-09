@@ -37,17 +37,23 @@ final class ListaGrouponCoordinator: ModuleInterface {
     typealias Router = ListaGrouponRouter
     typealias Interactor = ListaGrouponInteractor
     
-    func navigation() -> UINavigationController {
-        UINavigationController(rootViewController: build())
+    func navigation(dto: ListaGrouponCoordinatorDTO? = nil) -> UINavigationController {
+        UINavigationController(rootViewController: build(dto: dto))
     }
 
-    func build() -> UIViewController {
+    func build(dto: ListaGrouponCoordinatorDTO? = nil) -> UIViewController {
         let view = View()
         let interactor = Interactor()
         let presenter = Presenter()
+        presenter.arrayData = dto?.modelData ?? []
         let router = Router()
         self.coordinator(view: view, presenter: presenter, router: router, interactor: interactor)
         router.viewController = view
         return view
     }
 }
+
+struct ListaGrouponCoordinatorDTO {
+    var modelData: [DataViewModel]?
+}
+

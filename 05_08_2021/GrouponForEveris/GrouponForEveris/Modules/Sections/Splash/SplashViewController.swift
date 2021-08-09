@@ -47,7 +47,7 @@ extension SplashViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cellTest = self.myTableViewTest.dequeueReusableCell(withIdentifier: GenericCell.defaultReuseIdentifierView, for: indexPath) as! GenericCell
         if let modelData = self.presenter?.informationForCell(indexPath: indexPath.row) {
-            cellTest.configCell(data: modelData)
+            //cellTest.configCell(data: modelData)
         }
         return cellTest
     }

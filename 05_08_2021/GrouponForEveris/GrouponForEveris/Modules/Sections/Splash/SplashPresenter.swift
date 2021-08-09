@@ -10,15 +10,15 @@ import Foundation
 protocol SplashPresenterProtocol {
     func fetchDataFromPresent()
     func numberOfRowInsection() -> Int
-    func informationForCell(indexPath: Int) -> CardDataViewModel?
+    func informationForCell(indexPath: Int) -> CardViewModel?
 }
 
 protocol SplashInteractorOutputProtocol {
-    func getDataFromBusiness(data: [CardBusinessModel]?)
+    func getDataFromBusiness(data: [CardViewModel]?)
 }
 
 class SplashPresenter: BasePresenter<SplashViewControllerProtocol, SplashRouterProtocol, SplashInteractorProtocol>{
-    var arrayData: [CardBusinessModel] = []
+    var arrayData: [CardViewModel] = []
 }
 
 extension SplashPresenter: SplashPresenterProtocol{
@@ -30,13 +30,13 @@ extension SplashPresenter: SplashPresenterProtocol{
         arrayData.count
     }
     
-    func informationForCell(indexPath: Int) -> CardDataViewModel? {
-        arrayData[indexPath].data
+    func informationForCell(indexPath: Int) -> CardViewModel? {
+        arrayData[indexPath]
     }
 }
 
 extension SplashPresenter: SplashInteractorOutputProtocol{
-    func getDataFromBusiness(data: [CardBusinessModel]?) {
+    func getDataFromBusiness(data: [CardViewModel]?) {
         if let dataDes = data{
             self.arrayData = dataDes
             self.vc?.reloadInformationInView()

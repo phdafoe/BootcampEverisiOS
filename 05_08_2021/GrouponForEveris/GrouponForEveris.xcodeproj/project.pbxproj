@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		856783289458735801CBD3A7 /* Pods_GrouponForEveris.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C03A694403C9F58D805CAFB1 /* Pods_GrouponForEveris.framework */; };
 		B42CFCE226C1254600E07D1D /* ListaGrouponViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B42CFCE126C1254600E07D1D /* ListaGrouponViewController.xib */; };
+		B42CFCE826C1339900E07D1D /* CuponCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42CFCE626C1339900E07D1D /* CuponCell.swift */; };
+		B42CFCE926C1339900E07D1D /* CuponCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B42CFCE726C1339900E07D1D /* CuponCell.xib */; };
+		B42CFCED26C13A1D00E07D1D /* CardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42CFCEC26C13A1C00E07D1D /* CardViewModel.swift */; };
 		B4D1607526C102F600CF821A /* HomeTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D1607326C102F600CF821A /* HomeTabBarViewController.swift */; };
 		B4D1607626C102F600CF821A /* HomeTabBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4D1607426C102F600CF821A /* HomeTabBarViewController.xib */; };
 		B4D1607926C1032800CF821A /* HomeTabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D1607826C1032800CF821A /* HomeTabBarCoordinator.swift */; };
@@ -28,8 +31,6 @@
 		B4E6C82426BBC2F600A251BA /* SplashInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E6C82326BBC2F600A251BA /* SplashInteractor.swift */; };
 		B4E6C82726BBC30400A251BA /* SplashRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E6C82626BBC30400A251BA /* SplashRouter.swift */; };
 		B4E6C82B26BBC32600A251BA /* SplashCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E6C82A26BBC32600A251BA /* SplashCoordinator.swift */; };
-		B4E6C83226BBC34E00A251BA /* EverGrouponBusinessModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E6C83126BBC34E00A251BA /* EverGrouponBusinessModel.swift */; };
-		B4E6C83526BBC35900A251BA /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E6C83426BBC35900A251BA /* ViewModel.swift */; };
 		B4E6C83926BBC3E900A251BA /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E6C83826BBC3E900A251BA /* Utils.swift */; };
 		B4E6C83D26BBCACD00A251BA /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E6C83C26BBCACD00A251BA /* AppCoordinator.swift */; };
 		B4E6C84226BBD05300A251BA /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E6C84126BBD05300A251BA /* NetworkService.swift */; };
@@ -49,6 +50,9 @@
 /* Begin PBXFileReference section */
 		559A232FCE498EB6730B0DB5 /* Pods-GrouponForEveris.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrouponForEveris.debug.xcconfig"; path = "Target Support Files/Pods-GrouponForEveris/Pods-GrouponForEveris.debug.xcconfig"; sourceTree = "<group>"; };
 		B42CFCE126C1254600E07D1D /* ListaGrouponViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListaGrouponViewController.xib; sourceTree = "<group>"; };
+		B42CFCE626C1339900E07D1D /* CuponCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuponCell.swift; sourceTree = "<group>"; };
+		B42CFCE726C1339900E07D1D /* CuponCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CuponCell.xib; sourceTree = "<group>"; };
+		B42CFCEC26C13A1C00E07D1D /* CardViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardViewModel.swift; sourceTree = "<group>"; };
 		B4D1607326C102F600CF821A /* HomeTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarViewController.swift; sourceTree = "<group>"; };
 		B4D1607426C102F600CF821A /* HomeTabBarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTabBarViewController.xib; sourceTree = "<group>"; };
 		B4D1607826C1032800CF821A /* HomeTabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarCoordinator.swift; sourceTree = "<group>"; };
@@ -70,8 +74,6 @@
 		B4E6C82326BBC2F600A251BA /* SplashInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashInteractor.swift; sourceTree = "<group>"; };
 		B4E6C82626BBC30400A251BA /* SplashRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashRouter.swift; sourceTree = "<group>"; };
 		B4E6C82A26BBC32600A251BA /* SplashCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashCoordinator.swift; sourceTree = "<group>"; };
-		B4E6C83126BBC34E00A251BA /* EverGrouponBusinessModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EverGrouponBusinessModel.swift; sourceTree = "<group>"; };
-		B4E6C83426BBC35900A251BA /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		B4E6C83826BBC3E900A251BA /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		B4E6C83C26BBCACD00A251BA /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		B4E6C84126BBD05300A251BA /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
@@ -119,6 +121,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B42CFCE526C1336900E07D1D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				B42CFCE626C1339900E07D1D /* CuponCell.swift */,
+				B42CFCE726C1339900E07D1D /* CuponCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		B4B7797626C0FFBC001AC20C /* HomeTabBar */ = {
 			isa = PBXGroup;
 			children = (
@@ -158,6 +169,7 @@
 		B4D1607B26C103AB00CF821A /* ListaGroupon */ = {
 			isa = PBXGroup;
 			children = (
+				B42CFCE526C1336900E07D1D /* Cell */,
 				B4D1609626C1160300CF821A /* ListaGrouponInteractor.swift */,
 				B4D1609C26C1160E00CF821A /* ListaGrouponPresenter.swift */,
 				B4D1609826C1160600CF821A /* ListaGrouponRouter.swift */,
@@ -248,8 +260,7 @@
 			isa = PBXGroup;
 			children = (
 				B4E6C84726BBDB3600A251BA /* EverGrouponServerModel.swift */,
-				B4E6C83126BBC34E00A251BA /* EverGrouponBusinessModel.swift */,
-				B4E6C83426BBC35900A251BA /* ViewModel.swift */,
+				B42CFCEC26C13A1C00E07D1D /* CardViewModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -363,6 +374,7 @@
 				B4E9619726BD1AF9007238AA /* SplashDosViewController.xib in Resources */,
 				B42CFCE226C1254600E07D1D /* ListaGrouponViewController.xib in Resources */,
 				B4D1607626C102F600CF821A /* HomeTabBarViewController.xib in Resources */,
+				B42CFCE926C1339900E07D1D /* CuponCell.xib in Resources */,
 				B4E6C80126BBB91900A251BA /* LaunchScreen.storyboard in Resources */,
 				B4E9616F26BBF6C5007238AA /* GenericCell.xib in Resources */,
 				B4E6C81E26BBC2C700A251BA /* SplashViewController.xib in Resources */,
@@ -424,7 +436,7 @@
 				B4E6C83D26BBCACD00A251BA /* AppCoordinator.swift in Sources */,
 				B4D160A126C1160F00CF821A /* ListaGrouponCoordinator.swift in Sources */,
 				B4E6C84526BBD29C00A251BA /* NetworkError.swift in Sources */,
-				B4E6C83526BBC35900A251BA /* ViewModel.swift in Sources */,
+				B42CFCED26C13A1D00E07D1D /* CardViewModel.swift in Sources */,
 				B4E6C81D26BBC2C700A251BA /* SplashViewController.swift in Sources */,
 				B4E961A326BD1C89007238AA /* SplashDosRouter.swift in Sources */,
 				B4E6C82726BBC30400A251BA /* SplashRouter.swift in Sources */,
@@ -432,7 +444,6 @@
 				B4E6C84826BBDB3600A251BA /* EverGrouponServerModel.swift in Sources */,
 				B4E6C82426BBC2F600A251BA /* SplashInteractor.swift in Sources */,
 				B4D1609D26C1160F00CF821A /* ListaGrouponRouter.swift in Sources */,
-				B4E6C83226BBC34E00A251BA /* EverGrouponBusinessModel.swift in Sources */,
 				B4D1607526C102F600CF821A /* HomeTabBarViewController.swift in Sources */,
 				B4E9619A26BD1B13007238AA /* SplashDosCoordinator.swift in Sources */,
 				B4E9616E26BBF6C5007238AA /* GenericCell.swift in Sources */,
@@ -448,6 +459,7 @@
 				B4E6C82126BBC2DB00A251BA /* SplashPresenter.swift in Sources */,
 				B4E9619626BD1AF9007238AA /* SplashDosViewController.swift in Sources */,
 				B4D160A226C1160F00CF821A /* ListaGrouponViewController.swift in Sources */,
+				B42CFCE826C1339900E07D1D /* CuponCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

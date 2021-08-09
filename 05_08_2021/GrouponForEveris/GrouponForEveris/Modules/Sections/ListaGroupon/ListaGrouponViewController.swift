@@ -37,7 +37,7 @@ class ListaGrouponViewController: UIViewController, ViewInterface {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.presenter.fetchData()
+        
     }
 
 }

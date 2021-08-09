@@ -28,35 +28,16 @@ POSSIBILITY OF SUCH DAMAGE.
 import Foundation
 
 protocol ListaGrouponInteractorPresenterInterface: InteractorPresenterInterface {
-    func fetchDataFromInteractor()
+    
 }
 
 final class ListaGrouponInteractor: InteractorInterface {
     
     weak var presenter: ListaGrouponPresenterInteractorInterface!
     let provider: ListaGrouponProviderProtocol = ListaGrouponProvider()
-    
-    
-    // Esta es una base de transformacion de negocia para la Vista futura
-    private func transformData(data: [Card]) -> [CardBusinessModel] {
-        var arrayData: [CardBusinessModel] = []
-        for index in 0..<data.count{
-            let obj = CardBusinessModel(data: CardDataViewModel(isAutoRefundEnabled: data[index].data?.isAutoRefundEnabled ?? false))
-            arrayData.append(obj)
-        }
-        return arrayData
-    }
-    
+ 
 }
 
 extension ListaGrouponInteractor: ListaGrouponInteractorPresenterInterface {
-    func fetchDataFromInteractor() {
-        provider.fetchData { [weak self] (result) in
-            guard self != nil else { return }
-            self?.presenter.getDataFromInteractor(data: self?.transformData(data: result.cards ?? []))
-        } failure: { (error) in
-            print(error)
-        }
-
-    }
+    
 }

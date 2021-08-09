@@ -32,11 +32,11 @@ protocol ListaGrouponPresenterRouterInterface: PresenterRouterInterface {
 }
 
 protocol ListaGrouponPresenterInteractorInterface: PresenterInteractorInterface {
-    func getDataFromInteractor(data: [CardBusinessModel]?) // tener en cuenta el modelo de datos
+    
 }
 
 protocol ListaGrouponPresenterViewInterface: PresenterViewInterface {
-    func fetchData()
+    
 }
 
 final class ListaGrouponPresenter: PresenterInterface {
@@ -45,7 +45,7 @@ final class ListaGrouponPresenter: PresenterInterface {
     var interactor: ListaGrouponInteractorPresenterInterface!
     weak var view: ListaGrouponViewPresenterInterface!
     
-    var arrayData: [CardBusinessModel] = [] // tener en cuenta el modelo de datos
+    var arrayData: [DataViewModel] = []
     
 }
 
@@ -54,17 +54,10 @@ extension ListaGrouponPresenter: ListaGrouponPresenterRouterInterface {
 }
 
 extension ListaGrouponPresenter: ListaGrouponPresenterInteractorInterface {
-    func getDataFromInteractor(data: [CardBusinessModel]?) {
-        if let dataDes = data{
-            self.arrayData = dataDes
-            self.view.reloadInformationInView()
-        }
-    }
+    
 }
 
 extension ListaGrouponPresenter: ListaGrouponPresenterViewInterface {
-    func fetchData() {
-        self.interactor.fetchDataFromInteractor()
-    }
+    
     
 }

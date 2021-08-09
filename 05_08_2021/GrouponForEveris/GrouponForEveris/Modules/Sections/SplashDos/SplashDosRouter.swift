@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 protocol SplashDosRouterPresenterInterface: RouterPresenterInterface {
-    func showHomeTabBar(data: [CardBusinessModel])
+    func showHomeTabBar(data: [DataViewModel])
 }
 
 final class SplashDosRouter: RouterInterface {
@@ -20,9 +20,9 @@ final class SplashDosRouter: RouterInterface {
 }
 
 extension SplashDosRouter: SplashDosRouterPresenterInterface {
-    func showHomeTabBar(data: [CardBusinessModel]) {
+    func showHomeTabBar(data: [DataViewModel]) {
         DispatchQueue.main.async {
-            let vc = HomeTabBarCoordinator.homeTabBar(dto: data)
+            let vc = HomeTabBarCoordinator.homeTabBar(dto: HomeTabBarCoordinatorDTO(modelData: data))
             vc.modalTransitionStyle = .crossDissolve
             vc.modalPresentationStyle = .fullScreen
             self.viewController?.present(vc, animated: true, completion: nil)

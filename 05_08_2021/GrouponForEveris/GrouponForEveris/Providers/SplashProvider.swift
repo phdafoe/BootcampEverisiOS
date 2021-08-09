@@ -30,7 +30,6 @@ extension SplashProvider: SplashProviderProtocol {
             guard self != nil else { return }
             failure(error)
         }
-
     }
 }
 
