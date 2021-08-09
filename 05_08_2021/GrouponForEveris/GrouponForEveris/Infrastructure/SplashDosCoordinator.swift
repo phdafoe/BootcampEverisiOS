@@ -10,7 +10,7 @@ import UIKit
 
 // MARK: - module builder
 
-final class SplashDosCoodinator: ModuleInterface {
+final class SplashDosCoordinator: ModuleInterface {
 
     typealias View = SplashDosViewController
     typealias Presenter = SplashDosPresenter

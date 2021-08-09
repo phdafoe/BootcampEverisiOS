@@ -25,7 +25,7 @@ final class SplashDosPresenter: PresenterInterface {
     var interactor: SplashDosInteractorPresenterInterface!
     weak var view: SplashDosViewPresenterInterface!
     
-    var arrayData: [CardBusinessModel] = []
+    //var arrayData: [CardBusinessModel] = []
     
 }
 
@@ -36,8 +36,9 @@ extension SplashDosPresenter: SplashDosPresenterRouterInterface {
 extension SplashDosPresenter: SplashDosPresenterInteractorInterface {
     func getDataFromInteractor(data: [CardBusinessModel]?) {
         if let dataDes = data{
-            self.arrayData = dataDes
-            self.view.reloadInformationInView()
+            //self.arrayData = dataDes
+            self.router.showHomeTabBar(data: dataDes)
+            //self.view.reloadInformationInView()
         }
     }
 }

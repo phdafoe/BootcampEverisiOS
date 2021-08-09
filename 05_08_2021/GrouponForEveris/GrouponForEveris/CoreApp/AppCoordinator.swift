@@ -12,12 +12,12 @@ protocol AppCoordinatorProtocol {
     func showInitialApp(window: UIWindow)
 }
 
-final class AppCoordinator: AppCoordinatorProtocol{
+final class AppCoordinator: AppCoordinatorProtocol {
     
     private var initialVC = UIViewController()
     
     internal func showInitialApp(window: UIWindow){
-        initialVC = SplashCoordinator.navigation()
+        initialVC = SplashDosCoordinator().build()
         window.rootViewController = initialVC
         window.makeKeyAndVisible()
     }

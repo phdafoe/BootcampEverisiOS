@@ -36,6 +36,5 @@ extension SplashDosInteractor: SplashDosInteractorPresenterInterface {
         } failure: { (error) in
             //
         }
-
     }
 }
