@@ -27,56 +27,18 @@ POSSIBILITY OF SUCH DAMAGE.
 
 import Foundation
 
-protocol ListaGrouponPresenterRouterInterface: PresenterRouterInterface {
+protocol DetalleListaGrouponInteractorPresenterInterface: InteractorPresenterInterface {
     
 }
 
-protocol ListaGrouponPresenterInteractorInterface: PresenterInteractorInterface {
+final class DetalleListaGrouponInteractor: InteractorInterface {
     
+    weak var presenter: DetalleListaGrouponPresenterInteractorInterface!
+    let provider: DetalleListaGrouponProviderProtocol = DetalleListaGrouponProvider()
+   
+        
 }
 
-protocol ListaGrouponPresenterViewInterface: PresenterViewInterface {
-    func updateView()
-    func numberOfRow() -> Int
-    func objectFrom(index: Int) -> CardViewModel?
-    func showDetailVC(index: Int)
-}
-
-final class ListaGrouponPresenter: PresenterInterface {
-    
-    var router: ListaGrouponRouterPresenterInterface!
-    var interactor: ListaGrouponInteractorPresenterInterface!
-    weak var view: ListaGrouponViewPresenterInterface!
-    
-    var arrayData: [DataViewModel] = []
-    
-}
-
-extension ListaGrouponPresenter: ListaGrouponPresenterRouterInterface {
-    
-}
-
-extension ListaGrouponPresenter: ListaGrouponPresenterInteractorInterface {
-    
-}
-
-extension ListaGrouponPresenter: ListaGrouponPresenterViewInterface {
-    func updateView() {
-        self.view.reloadInformationInView()
-    }
-    
-    func numberOfRow() -> Int {
-        self.arrayData.count
-    }
-    
-    func objectFrom(index: Int) -> CardViewModel? {
-        self.arrayData[index].data
-    }
-    
-    func showDetailVC(index: Int) {
-        if let dataModel = self.arrayData[index].data {
-            self.router.showDetailVC(data: dataModel)
-        }
-    }
+extension DetalleListaGrouponInteractor: DetalleListaGrouponInteractorPresenterInterface {
     
 }

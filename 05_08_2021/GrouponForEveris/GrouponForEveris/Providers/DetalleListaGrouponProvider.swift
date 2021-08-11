@@ -27,56 +27,36 @@ POSSIBILITY OF SUCH DAMAGE.
 
 import Foundation
 
-protocol ListaGrouponPresenterRouterInterface: PresenterRouterInterface {
+protocol DetalleListaGrouponProviderProtocol {
     
+    func fetchData(completion: @escaping (EverGrouponServerModel) -> (), failure: @escaping (NetworkError) -> ())
 }
 
-protocol ListaGrouponPresenterInteractorInterface: PresenterInteractorInterface {
+class DetalleListaGrouponProvider{
     
+    let networkService: NetworkServiceProtocol = NetworkService()
 }
 
-protocol ListaGrouponPresenterViewInterface: PresenterViewInterface {
-    func updateView()
-    func numberOfRow() -> Int
-    func objectFrom(index: Int) -> CardViewModel?
-    func showDetailVC(index: Int)
-}
-
-final class ListaGrouponPresenter: PresenterInterface {
+extension DetalleListaGrouponProvider: DetalleListaGrouponProviderProtocol {
     
-    var router: ListaGrouponRouterPresenterInterface!
-    var interactor: ListaGrouponInteractorPresenterInterface!
-    weak var view: ListaGrouponViewPresenterInterface!
-    
-    var arrayData: [DataViewModel] = []
-    
-}
-
-extension ListaGrouponPresenter: ListaGrouponPresenterRouterInterface {
-    
-}
-
-extension ListaGrouponPresenter: ListaGrouponPresenterInteractorInterface {
-    
-}
-
-extension ListaGrouponPresenter: ListaGrouponPresenterViewInterface {
-    func updateView() {
-        self.view.reloadInformationInView()
-    }
-    
-    func numberOfRow() -> Int {
-        self.arrayData.count
-    }
-    
-    func objectFrom(index: Int) -> CardViewModel? {
-        self.arrayData[index].data
-    }
-    
-    func showDetailVC(index: Int) {
-        if let dataModel = self.arrayData[index].data {
-            self.router.showDetailVC(data: dataModel)
+    func fetchData(completion: @escaping (EverGrouponServerModel) -> (), failure: @escaping (NetworkError) -> ()) {
+        
+        networkService.requestGeneric(dto: DetalleListaGrouponProviderProviderRequestDTO.requestDataLista(),
+                                      entityClass: EverGrouponServerModel.self) { [weak self] (result) in
+            guard self != nil else { return }
+            if let resultDes = result{
+                completion(resultDes)
+            }
+        } failure: { [weak self] (error) in
+            guard self != nil else { return }
+            failure(error)
         }
+
     }
-    
+}
+
+struct DetalleListaGrouponProviderProviderRequestDTO {
+    static func requestDataLista() -> RequestDTO {
+        RequestDTO(param: nil, method: .get, endpoint: URLEndpoint.endpointGrouponList)
+    }
 }

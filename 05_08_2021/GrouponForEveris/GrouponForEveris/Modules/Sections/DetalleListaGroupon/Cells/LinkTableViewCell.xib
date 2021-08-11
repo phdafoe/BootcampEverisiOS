@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="70" id="KGk-i7-Jjw" customClass="LinkTableViewCell" customModule="GrouponForEveris" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FUx-6r-iUI">
+                        <rect key="frame" x="20" y="13" width="280" height="44"/>
+                        <color key="backgroundColor" red="1" green="0.73234688692280536" blue="0.54244491471402967" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <state key="normal" title="_Button">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <connections>
+                            <action selector="showLinkGrouponACTION:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Qju-aZ-Za1"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="FUx-6r-iUI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="SfM-GT-XvW"/>
+                    <constraint firstItem="FUx-6r-iUI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="13" id="keX-vW-SRP"/>
+                    <constraint firstAttribute="trailing" secondItem="FUx-6r-iUI" secondAttribute="trailing" constant="20" id="lkc-DN-ec7"/>
+                    <constraint firstAttribute="bottom" secondItem="FUx-6r-iUI" secondAttribute="bottom" constant="13" id="zsv-P3-yfm"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="myLinkBTN" destination="FUx-6r-iUI" id="Ww6-Ss-Zne"/>
+            </connections>
+            <point key="canvasLocation" x="40.579710144927539" y="143.30357142857142"/>
+        </tableViewCell>
+    </objects>
+</document>
