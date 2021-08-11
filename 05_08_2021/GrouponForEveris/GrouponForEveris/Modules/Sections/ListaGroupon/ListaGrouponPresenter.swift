@@ -36,7 +36,9 @@ protocol ListaGrouponPresenterInteractorInterface: PresenterInteractorInterface 
 }
 
 protocol ListaGrouponPresenterViewInterface: PresenterViewInterface {
-    
+    func updateView()
+    func numberOfRow() -> Int
+    func objectFrom(index: Int) -> CardViewModel?
 }
 
 final class ListaGrouponPresenter: PresenterInterface {
@@ -58,6 +60,16 @@ extension ListaGrouponPresenter: ListaGrouponPresenterInteractorInterface {
 }
 
 extension ListaGrouponPresenter: ListaGrouponPresenterViewInterface {
+    func updateView() {
+        self.view.reloadInformationInView()
+    }
     
+    func numberOfRow() -> Int {
+        self.arrayData.count
+    }
+    
+    func objectFrom(index: Int) -> CardViewModel? {
+        self.arrayData[index].data
+    }
     
 }

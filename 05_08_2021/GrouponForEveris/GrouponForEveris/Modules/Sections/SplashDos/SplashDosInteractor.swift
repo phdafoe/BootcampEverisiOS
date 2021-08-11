@@ -16,7 +16,6 @@ final class SplashDosInteractor: InteractorInterface {
     weak var presenter: SplashDosPresenterInteractorInterface!
     let provider: SplashProviderProtocol = SplashProvider()
     
-    
     private func transformDataViewModel(data: [Card]) -> [DataViewModel] {
         var arrayData: [DataViewModel] = []
         for index in 0..<data.count{
@@ -91,12 +90,21 @@ final class SplashDosInteractor: InteractorInterface {
 }
 
 extension SplashDosInteractor: SplashDosInteractorPresenterInterface {
+    
     func fetchDataFromInteractor() {
-        provider.fetchData { [weak self] (result) in
-            guard self != nil else { return }
-            self?.presenter?.getDataFromInteractor(data: self?.transformDataViewModel(data: result.cards ?? []))
-        } failure: { (error) in
-            //
+        
+        DDBBCoreStack.shared.loadDataIfNeeded { (isRefreshingRequired) in
+            if isRefreshingRequired {
+                self.provider.fetchData { [weak self] (result) in
+                    guard self != nil else { return }
+                    DDBBCoreStack.shared.setCuponList(data: self?.transformDataViewModel(data: result.cards ?? []) ?? [])
+                    self?.presenter?.getDataFromInteractor(data: self?.transformDataViewModel(data: result.cards ?? []))
+                } failure: { (error) in
+                    print(error.localizedDescription)
+                }
+            } else {
+                self.presenter?.getDataFromInteractor(data: DDBBCoreStack.shared.getCuponList())
+            }
         }
     }
 }

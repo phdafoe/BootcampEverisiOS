@@ -8,8 +8,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="___VariableName___ViewController">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ListaGrouponViewController" customModule="GrouponForEveris" customModuleProvider="target">
             <connections>
+                <outlet property="myCuponListTableView" destination="jEg-UB-s1u" id="3zj-jy-OSk"/>
                 <outlet property="view" destination="iN0-l3-epB" id="0KK-4V-vEI"/>
             </connections>
         </placeholder>
@@ -17,9 +18,21 @@
         <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jEg-UB-s1u">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-            <point key="canvasLocation" x="32" y="133"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="jEg-UB-s1u" secondAttribute="bottom" id="5bC-T4-cOE"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="jEg-UB-s1u" secondAttribute="trailing" id="j6Y-mx-Zfu"/>
+                <constraint firstItem="jEg-UB-s1u" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="r1B-XQ-paC"/>
+                <constraint firstItem="jEg-UB-s1u" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="sSl-MR-RXP"/>
+            </constraints>
+            <point key="canvasLocation" x="31.884057971014496" y="132.58928571428572"/>
         </view>
     </objects>
     <resources>

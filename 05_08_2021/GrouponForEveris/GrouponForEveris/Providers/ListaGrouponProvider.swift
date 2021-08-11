@@ -57,6 +57,8 @@ extension ListaGrouponProvider: ListaGrouponProviderProtocol {
 
 struct ListaGrouponProviderRequestDTO {
     static func requestDataLista() -> RequestDTO {
-        RequestDTO(param: nil, method: .get, endpoint: URLEndpoint.endpointGrouponList)
+        RequestDTO(param: nil,
+                   method: .get,
+                   endpoint: URLEndpoint.endpointGrouponList)
     }
 }

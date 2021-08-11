@@ -9,7 +9,7 @@ import UIKit
 import Kingfisher
 
 protocol CuponCellProtocol {
-    func configCell(data: DataViewModel)
+    func configCell(data: CardViewModel)
 }
 
 class CuponCell: UITableViewCell, ReuseIdentifierView {
@@ -37,7 +37,25 @@ class CuponCell: UITableViewCell, ReuseIdentifierView {
 }
 
 extension CuponCell: CuponCellProtocol{
-    func configCell(data: DataViewModel) {
-        //
+    func configCell(data: CardViewModel) {
+        let url = URL(string: data.largeImageUrl ?? "")
+        self.myImageCuponView.layer.cornerRadius = 20
+        self.myImageCuponView.layer.borderColor = UIColor.gray.cgColor
+        self.myImageCuponView.layer.borderWidth = 1
+        self.myImageCuponView.kf.setImage(with: url,
+                                          placeholder: UIImage(named: "placeholder"),
+                                          options: [
+                                            .scaleFactor(UIScreen.main.scale),
+                                            .transition(.fade(1)),
+                                            .cacheOriginalImage
+                                          ],
+                                          completionHandler: nil)
+        self.myTendenciaLBL.text = "Tendencia"
+        if !(data.tags?.isEmpty ?? false) {
+            self.myTagsBL.text = data.tags?[0].name ?? ""
+        }
+        self.myDescripcionBL.text = data.highlightsHtml
+        self.myPrecioLBL.text = "Desde \(data.priceSummary?.value?.formattedAmount ?? "")"
+        self.myPromocionLBL.text =  data.descriptor
     }
 }

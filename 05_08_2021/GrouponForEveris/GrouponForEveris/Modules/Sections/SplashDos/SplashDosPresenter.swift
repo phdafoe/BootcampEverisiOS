@@ -25,8 +25,6 @@ final class SplashDosPresenter: PresenterInterface {
     var interactor: SplashDosInteractorPresenterInterface!
     weak var view: SplashDosViewPresenterInterface!
     
-    //var arrayData: [CardBusinessModel] = []
-    
 }
 
 extension SplashDosPresenter: SplashDosPresenterRouterInterface {

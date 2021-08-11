@@ -45,6 +45,7 @@
 		B4E9619D26BD1B84007238AA /* SplashDosPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E9619C26BD1B84007238AA /* SplashDosPresenter.swift */; };
 		B4E961A026BD1C47007238AA /* SplashDosInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E9619F26BD1C47007238AA /* SplashDosInteractor.swift */; };
 		B4E961A326BD1C89007238AA /* SplashDosRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E961A226BD1C89007238AA /* SplashDosRouter.swift */; };
+		B4F65B3F26C3AA050036F857 /* DDBBCoreStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F65B3E26C3AA050036F857 /* DDBBCoreStack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -88,6 +89,7 @@
 		B4E9619C26BD1B84007238AA /* SplashDosPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashDosPresenter.swift; sourceTree = "<group>"; };
 		B4E9619F26BD1C47007238AA /* SplashDosInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashDosInteractor.swift; sourceTree = "<group>"; };
 		B4E961A226BD1C89007238AA /* SplashDosRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashDosRouter.swift; sourceTree = "<group>"; };
+		B4F65B3E26C3AA050036F857 /* DDBBCoreStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDBBCoreStack.swift; sourceTree = "<group>"; };
 		C03A694403C9F58D805CAFB1 /* Pods_GrouponForEveris.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GrouponForEveris.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D23B31FC746232D9B0A625DA /* Pods-GrouponForEveris.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrouponForEveris.release.xcconfig"; path = "Target Support Files/Pods-GrouponForEveris/Pods-GrouponForEveris.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -269,6 +271,7 @@
 			isa = PBXGroup;
 			children = (
 				B4E6C83826BBC3E900A251BA /* Utils.swift */,
+				B4F65B3E26C3AA050036F857 /* DDBBCoreStack.swift */,
 			);
 			path = "Utils+Helpers";
 			sourceTree = "<group>";
@@ -432,6 +435,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4E9619D26BD1B84007238AA /* SplashDosPresenter.swift in Sources */,
+				B4F65B3F26C3AA050036F857 /* DDBBCoreStack.swift in Sources */,
 				B4D1607926C1032800CF821A /* HomeTabBarCoordinator.swift in Sources */,
 				B4E6C83D26BBCACD00A251BA /* AppCoordinator.swift in Sources */,
 				B4D160A126C1160F00CF821A /* ListaGrouponCoordinator.swift in Sources */,
