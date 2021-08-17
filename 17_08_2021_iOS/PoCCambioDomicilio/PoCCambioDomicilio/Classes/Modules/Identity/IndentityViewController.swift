@@ -33,12 +33,23 @@ protocol IndentityViewPresenterInterface: ViewPresenterInterface {
 
 class IndentityViewController: UIViewController, ViewInterface {
 
+    // MARK: - ID
     var presenter: IndentityPresenterViewInterface!
-    var ide: IndentityProvider!
+    
+    // MARK: - Outlets
+    @IBOutlet weak var myProfileTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.presenter.fetchDataIdentity()
+        self.setupTableView()
+    }
+    
+    // MARK: - Private methods
+    private func setupTableView() {
+        self.myProfileTableView.delegate = self
+        self.myProfileTableView.dataSource = self
+        self.myProfileTableView.register(UINib(nibName: IdentityCell.defaultReuseIdentifierView, bundle: nil), forCellReuseIdentifier: IdentityCell.defaultReuseIdentifierView)
     }
 
 }
@@ -46,8 +57,38 @@ class IndentityViewController: UIViewController, ViewInterface {
 extension IndentityViewController: IndentityViewPresenterInterface {
 
     func reloadInformationInView() {
-        
+        DispatchQueue.main.async {
+            self.myProfileTableView.reloadData()
+        }
     }
     
     
+}
+
+
+extension IndentityViewController: UITableViewDataSource, UITableViewDelegate {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        1
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cellProfile = self.myProfileTableView.dequeueReusableCell(withIdentifier: IdentityCell.defaultReuseIdentifierView, for: indexPath) as! IdentityCell
+        cellProfile.delegate = self
+        if let model = self.presenter.dataCellModel {
+            cellProfile.configCell(model: model)
+        }
+        return cellProfile
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        457
+    }
+}
+
+extension IndentityViewController: IdentityCellDelegate {
+    func showInfoProfile(_ cell: UITableViewCell, showMoreInfo: Bool) {
+        if showMoreInfo{
+            self.presenter.showMessageMoreInfoProfile()
+        }
+    }
 }

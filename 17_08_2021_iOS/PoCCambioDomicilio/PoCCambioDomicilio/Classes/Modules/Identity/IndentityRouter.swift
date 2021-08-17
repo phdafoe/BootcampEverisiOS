@@ -29,7 +29,7 @@ import Foundation
 import UIKit
 
 protocol IndentityRouterPresenterInterface: RouterPresenterInterface {
-
+    func showMessageMoreInfoProfile()
 }
 
 final class IndentityRouter: RouterInterface {
@@ -40,5 +40,12 @@ final class IndentityRouter: RouterInterface {
 }
 
 extension IndentityRouter: IndentityRouterPresenterInterface {
-    
+    func showMessageMoreInfoProfile() {
+        let dto = MessageViewDTO(titulo: "Mas Información",
+                                 contenido: "Una vez realizado un nuevo empadronamiento, aqui podrás comunicar a los distintos organismos de la administración (como Direccion general de tráfico, agencia trobitaria y Seguridad social entre otros), tu cambio de domicilio sin tener que realizarlo presencialmente en cada uno de ellos. \n\n En el caso de no aparecer la información correcta del ultimo empadronamiento realizado deberás ponerte en contacto con tu oficina de empadronamiento",
+                                 botones: true)
+        let vc = MessageCoordinator().build(dto: dto)
+        vc.modalPresentationStyle = .overCurrentContext
+        self.viewController?.present(vc, animated: false, completion: nil)
+    }
 }

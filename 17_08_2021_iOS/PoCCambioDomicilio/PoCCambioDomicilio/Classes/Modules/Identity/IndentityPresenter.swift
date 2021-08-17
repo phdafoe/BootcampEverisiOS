@@ -36,7 +36,9 @@ protocol IndentityPresenterInteractorInterface: PresenterInteractorInterface {
 }
 
 protocol IndentityPresenterViewInterface: PresenterViewInterface {
-   func fetchDataIdentity()
+    func fetchDataIdentity()
+    func showMessageMoreInfoProfile()
+    var dataCellModel: IdentityCellModel? { get set }
 }
 
 final class IndentityPresenter: PresenterInterface {
@@ -46,6 +48,7 @@ final class IndentityPresenter: PresenterInterface {
     weak var view: IndentityViewPresenterInterface!
     
 
+    var dataCellModel: IdentityCellModel?
     
 }
 
@@ -56,15 +59,32 @@ extension IndentityPresenter: IndentityPresenterRouterInterface {
 extension IndentityPresenter: IndentityPresenterInteractorInterface {
     
     func getDataProfileView(data: ProfileViewModel) {
-        debugPrint(data)
+        self.dataCellModel = IdentityCellModel(photo: nil,
+                                               greeting: "Hola",
+                                               name: data.name,
+                                               lastUpdate: data.lastUpdate,
+                                               lastNamePlaceholder: "Apellidos",
+                                               lastNameData: data.lastName,
+                                               identityDocPlaceholder: "NIF",
+                                               identityData: data.identityDoc,
+                                               validityPlaceholder: "Validez",
+                                               validityData: data.validityData,
+                                               addressPlaceholder: "DomicilioEmpadronado",
+                                               addressData: data.addressData,
+                                               cityPlaceholder: "Ciudad",
+                                               cityData: data.cityData)
+        self.view.reloadInformationInView()
     }
-    
     
 }
 
 extension IndentityPresenter: IndentityPresenterViewInterface {
     func fetchDataIdentity() {
         self.interactor.fetchDataIdentityInteractor()
+    }
+    
+    func showMessageMoreInfoProfile() {
+        self.router.showMessageMoreInfoProfile()
     }
     
     

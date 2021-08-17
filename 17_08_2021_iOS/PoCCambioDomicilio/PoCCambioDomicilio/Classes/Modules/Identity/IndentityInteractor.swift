@@ -72,10 +72,10 @@ final class IndentityInteractor: InteractorInterface {
         let addressBM = self.transformDataToAddressBusinessModel(data: addressSM)
         
         var model: ProfileViewModel?
-        model = ProfileViewModel(name: identityBM?.transmisiones?.transmisionDatos?[0].datosGenericos?.titular?.nombre,
+        model = ProfileViewModel(name: identityBM?.transmisiones?.transmisionDatos?[0].datosGenericos?.titular?.nombreCompleto,
                                  lastUpdate: identityBM?.transmisiones?.transmisionDatos?[0].datosEspecificos?.retorno?.datosTitular?.fechaCaducidad,
                                  lastName: identityBM?.transmisiones?.transmisionDatos?[0].datosGenericos?.titular?.apellido1,
-                                 identityDoc: identityBM?.transmisiones?.transmisionDatos?[0].datosGenericos?.titular?.tipoDocumentacion,
+                                 identityDoc: identityBM?.transmisiones?.transmisionDatos?[0].datosGenericos?.titular?.documentacion,
                                  validityData: identityBM?.transmisiones?.transmisionDatos?[0].datosEspecificos?.retorno?.datosTitular?.fechaCaducidad,
                                  addressData: addressBM?.transmisiones?.transmisionDatos?[0].direccion,
                                  cityData: addressBM?.transmisiones?.transmisionDatos?[0].municipioRespuesta)
@@ -99,7 +99,5 @@ extension IndentityInteractor: IndentityInteractorPresenterInterface {
         } failure: { (networkError) in
             //
         }
-    }
-    
-   
+    }  
 }

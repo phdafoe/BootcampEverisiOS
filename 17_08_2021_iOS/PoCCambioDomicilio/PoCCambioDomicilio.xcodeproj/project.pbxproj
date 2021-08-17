@@ -11,6 +11,8 @@
 		B4F372E526CBAA140056B086 /* AddressServerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F372E426CBAA140056B086 /* AddressServerModel.swift */; };
 		B4F372E826CBAE3F0056B086 /* AddressBusinessModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F372E726CBAE3F0056B086 /* AddressBusinessModel.swift */; };
 		B4F372EB26CBB2C10056B086 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F372EA26CBB2C10056B086 /* ProfileViewModel.swift */; };
+		B4F372F026CBBDA20056B086 /* IdentityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F372EE26CBBDA20056B086 /* IdentityCell.swift */; };
+		B4F372F126CBBDA20056B086 /* IdentityCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4F372EF26CBBDA20056B086 /* IdentityCell.xib */; };
 		B4FF310526CB96B1001F0779 /* PublicSans-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B4FF30F326CB96B1001F0779 /* PublicSans-Black.ttf */; };
 		B4FF310626CB96B1001F0779 /* PublicSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B4FF30F426CB96B1001F0779 /* PublicSans-Italic.ttf */; };
 		B4FF310726CB96B1001F0779 /* PublicSans-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B4FF30F526CB96B1001F0779 /* PublicSans-ExtraBoldItalic.ttf */; };
@@ -94,6 +96,8 @@
 		B4F372E426CBAA140056B086 /* AddressServerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressServerModel.swift; sourceTree = "<group>"; };
 		B4F372E726CBAE3F0056B086 /* AddressBusinessModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressBusinessModel.swift; sourceTree = "<group>"; };
 		B4F372EA26CBB2C10056B086 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		B4F372EE26CBBDA20056B086 /* IdentityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentityCell.swift; sourceTree = "<group>"; };
+		B4F372EF26CBBDA20056B086 /* IdentityCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IdentityCell.xib; sourceTree = "<group>"; };
 		B4FF30F326CB96B1001F0779 /* PublicSans-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PublicSans-Black.ttf"; sourceTree = "<group>"; };
 		B4FF30F426CB96B1001F0779 /* PublicSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PublicSans-Italic.ttf"; sourceTree = "<group>"; };
 		B4FF30F526CB96B1001F0779 /* PublicSans-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PublicSans-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
@@ -185,6 +189,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B4F372ED26CBBD790056B086 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				B4F372EE26CBBDA20056B086 /* IdentityCell.swift */,
+				B4F372EF26CBBDA20056B086 /* IdentityCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		B4FF30F126CB96B1001F0779 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -325,6 +338,7 @@
 		E9A3648426C66F27009CD517 /* Identity */ = {
 			isa = PBXGroup;
 			children = (
+				B4F372ED26CBBD790056B086 /* Cell */,
 				E9F58FC126C6E23A0042372C /* Model */,
 				E9A364B126C66FB7009CD517 /* IndentityViewController.xib */,
 				E9A364B226C66FB7009CD517 /* IndentityViewController.swift */,
@@ -501,6 +515,7 @@
 				B4FF310526CB96B1001F0779 /* PublicSans-Black.ttf in Resources */,
 				E9A364E426C68C6C009CD517 /* ContactoViewController.xib in Resources */,
 				E9A3647226C669CC009CD517 /* Assets.xcassets in Resources */,
+				B4F372F126CBBDA20056B086 /* IdentityCell.xib in Resources */,
 				B4FF310F26CB96B1001F0779 /* PublicSans-SemiBoldItalic.ttf in Resources */,
 				B4FF310726CB96B1001F0779 /* PublicSans-ExtraBoldItalic.ttf in Resources */,
 				E9A364D926C67F96009CD517 /* HomeTabBarViewController.xib in Resources */,
@@ -564,6 +579,7 @@
 				E9A3649126C66F66009CD517 /* SplashProvider.swift in Sources */,
 				E9A364E926C68C6C009CD517 /* ContactoPresenter.swift in Sources */,
 				E9A3647E26C66EBE009CD517 /* BaseVIPER.swift in Sources */,
+				B4F372F026CBBDA20056B086 /* IdentityCell.swift in Sources */,
 				E9A364F726C68CD2009CD517 /* AyudaCoordinator.swift in Sources */,
 				E9A364E826C68C6C009CD517 /* ContactoCoordinator.swift in Sources */,
 				E9A364BD26C66FB7009CD517 /* IndentityPresenter.swift in Sources */,
