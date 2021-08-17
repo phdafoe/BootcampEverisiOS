@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController">
+            <connections>
+                <outlet property="buttonClave" destination="WxH-ry-bnJ" id="iqr-jo-EYx"/>
+                <outlet property="buttonConditions" destination="Krh-SP-JkY" id="hT7-Uk-gqw"/>
+                <outlet property="buttonQuestion" destination="HHn-Ej-r0j" id="kPP-0T-NAl"/>
+                <outlet property="labelTopInfo" destination="TK6-ej-aYj" id="KK5-ge-VMl"/>
+                <outlet property="textViewConditions" destination="j9H-NO-oLz" id="xeB-dt-Ke7"/>
+                <outlet property="view" destination="iN0-l3-epB" id="0KK-4V-vEI"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rg3-Ow-QUw" userLabel="TopHeaderWithText">
+                    <rect key="frame" x="0.0" y="74" width="414" height="267"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_Para acceder a la comunicacion de cambio de domicilio, debes hacerlo mediante tu identidad electronica Cl@ve" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TK6-ej-aYj">
+                            <rect key="frame" x="24" y="44" width="366" height="194"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                            <color key="textColor" name="color7"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" name="color2"/>
+                    <constraints>
+                        <constraint firstItem="TK6-ej-aYj" firstAttribute="leading" secondItem="rg3-Ow-QUw" secondAttribute="leading" constant="24" id="I1k-af-7XG"/>
+                        <constraint firstAttribute="trailing" secondItem="TK6-ej-aYj" secondAttribute="trailing" constant="24" id="Oi8-gi-rgb"/>
+                        <constraint firstAttribute="bottom" secondItem="TK6-ej-aYj" secondAttribute="bottom" constant="29" id="lae-R1-oba"/>
+                        <constraint firstAttribute="height" constant="267" id="ohf-Le-1cv"/>
+                        <constraint firstItem="TK6-ej-aYj" firstAttribute="top" secondItem="rg3-Ow-QUw" secondAttribute="top" constant="44" id="rz7-PD-uyu"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Vj-l5-JAI" userLabel="TopHeader">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="74"/>
+                    <color key="backgroundColor" name="color2"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="74" id="OhV-6n-N99"/>
+                    </constraints>
+                </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="CxF-Jo-2up">
+                    <rect key="frame" x="24" y="375" width="240" height="46"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="46" id="EEk-YE-c2L"/>
+                        <constraint firstAttribute="width" constant="240" id="I03-Qd-cx9"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I8p-mh-KU8">
+                    <rect key="frame" x="0.0" y="631" width="414" height="265"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Krh-SP-JkY">
+                            <rect key="frame" x="20" y="23" width="24" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="24" id="a5h-s9-VIG"/>
+                                <constraint firstAttribute="height" constant="24" id="wd5-SU-mnw"/>
+                            </constraints>
+                            <color key="tintColor" name="color1"/>
+                            <state key="normal" image="checkInactive"/>
+                            <state key="disabled" image="checkInactive"/>
+                            <state key="selected" image="checkActive"/>
+                            <state key="highlighted" image="checkActive"/>
+                            <connections>
+                                <action selector="actionChangeCheckState:" destination="-1" eventType="touchUpInside" id="0zg-A4-nLs"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WxH-ry-bnJ">
+                            <rect key="frame" x="20" y="85" width="374" height="56"/>
+                            <color key="backgroundColor" red="0.89803921568627454" green="0.89803921568627454" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="56" id="0Te-fX-yMF"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <state key="normal" title="_Acceder con Cl@ve">
+                                <color key="titleColor" name="color5"/>
+                            </state>
+                            <connections>
+                                <action selector="loginActionWhatsClave:" destination="-1" eventType="touchUpInside" id="QKs-yB-Jsh"/>
+                            </connections>
+                        </button>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="He leído y acepto las Condiciones legales" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j9H-NO-oLz">
+                            <rect key="frame" x="52" y="15" width="342" height="40"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <color key="textColor" systemColor="labelColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HHn-Ej-r0j">
+                            <rect key="frame" x="20" y="153" width="374" height="52"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <state key="normal" title="¿Qúe es Cl@ve?">
+                                <color key="titleColor" name="color1"/>
+                            </state>
+                            <connections>
+                                <action selector="actionWhatsClave:" destination="-1" eventType="touchUpInside" id="sRH-Rg-2PT"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Krh-SP-JkY" firstAttribute="leading" secondItem="I8p-mh-KU8" secondAttribute="leading" constant="20" id="5qY-5w-X85"/>
+                        <constraint firstItem="WxH-ry-bnJ" firstAttribute="top" secondItem="j9H-NO-oLz" secondAttribute="bottom" constant="30" id="7cU-qg-zgk"/>
+                        <constraint firstItem="Krh-SP-JkY" firstAttribute="top" secondItem="I8p-mh-KU8" secondAttribute="top" constant="23" id="Jzz-19-GjC"/>
+                        <constraint firstItem="j9H-NO-oLz" firstAttribute="leading" secondItem="Krh-SP-JkY" secondAttribute="trailing" constant="8" id="OWL-tC-Zjp"/>
+                        <constraint firstAttribute="bottom" secondItem="HHn-Ej-r0j" secondAttribute="bottom" constant="60" id="Qcs-Ie-rQd"/>
+                        <constraint firstItem="HHn-Ej-r0j" firstAttribute="leading" secondItem="I8p-mh-KU8" secondAttribute="leading" constant="20" id="fyO-yj-aNL"/>
+                        <constraint firstAttribute="height" constant="265" id="gig-2o-Atw"/>
+                        <constraint firstAttribute="trailing" secondItem="j9H-NO-oLz" secondAttribute="trailing" constant="20" id="nTe-b3-PU2"/>
+                        <constraint firstItem="j9H-NO-oLz" firstAttribute="centerY" secondItem="Krh-SP-JkY" secondAttribute="centerY" id="rZK-yS-Cxv"/>
+                        <constraint firstItem="j9H-NO-oLz" firstAttribute="top" secondItem="I8p-mh-KU8" secondAttribute="top" constant="15" id="sgW-gS-OnX"/>
+                        <constraint firstItem="HHn-Ej-r0j" firstAttribute="top" secondItem="WxH-ry-bnJ" secondAttribute="bottom" constant="12" id="udh-Mu-N5r"/>
+                        <constraint firstAttribute="trailing" secondItem="WxH-ry-bnJ" secondAttribute="trailing" constant="20" id="yrW-Ub-WBy"/>
+                        <constraint firstAttribute="trailing" secondItem="HHn-Ej-r0j" secondAttribute="trailing" constant="20" id="ziJ-oi-8IU"/>
+                        <constraint firstItem="WxH-ry-bnJ" firstAttribute="leading" secondItem="I8p-mh-KU8" secondAttribute="leading" constant="20" id="zu6-pD-TQS"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="I8p-mh-KU8" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="DZe-cu-0Mz"/>
+                <constraint firstItem="0Vj-l5-JAI" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="HVh-3q-Qb4"/>
+                <constraint firstItem="rg3-Ow-QUw" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="Hqe-ok-N6G"/>
+                <constraint firstItem="CxF-Jo-2up" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="24" id="Irb-oc-xrP"/>
+                <constraint firstItem="0Vj-l5-JAI" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="QyH-NP-Jc4"/>
+                <constraint firstItem="CxF-Jo-2up" firstAttribute="top" secondItem="rg3-Ow-QUw" secondAttribute="bottom" constant="34" id="YSP-dL-XAm"/>
+                <constraint firstItem="I8p-mh-KU8" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="aj2-Qs-yHZ"/>
+                <constraint firstAttribute="bottom" secondItem="I8p-mh-KU8" secondAttribute="bottom" id="as5-iW-bAP"/>
+                <constraint firstItem="rg3-Ow-QUw" firstAttribute="top" secondItem="0Vj-l5-JAI" secondAttribute="bottom" id="f1C-JB-2ge"/>
+                <constraint firstItem="0Vj-l5-JAI" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="jVh-hx-bOz"/>
+                <constraint firstItem="rg3-Ow-QUw" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="neJ-WL-FjF"/>
+            </constraints>
+            <point key="canvasLocation" x="31.884057971014496" y="132.58928571428572"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="checkActive" width="24" height="24"/>
+        <image name="checkInactive" width="24" height="24"/>
+        <image name="logo" width="640" height="111"/>
+        <namedColor name="color1">
+            <color red="0.76499998569488525" green="0.20399999618530273" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="color2">
+            <color red="1" green="0.85882352941176465" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="color5">
+            <color red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="color7">
+            <color red="0.074509803921568626" green="0.074509803921568626" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

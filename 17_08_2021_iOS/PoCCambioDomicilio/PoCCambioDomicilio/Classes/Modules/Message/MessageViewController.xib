@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MessageViewController" customModule="PoCCambioDomicilio" customModuleProvider="target">
+            <connections>
+                <outlet property="backgroundView" destination="KZF-DZ-RkH" id="m9e-ud-0t4"/>
+                <outlet property="botonAceptar" destination="wd6-DS-qFU" id="zNB-kl-Vyi"/>
+                <outlet property="containerView" destination="GKq-et-MBn" id="0FX-ey-VXF"/>
+                <outlet property="contenidoLabel" destination="s0H-4c-K2x" id="xLI-ey-cpr"/>
+                <outlet property="modalHeight" destination="QPO-7Q-Squ" id="cDc-zO-ovK"/>
+                <outlet property="tituloLabel" destination="GMf-dO-5PL" id="euU-Z9-zVb"/>
+                <outlet property="view" destination="iN0-l3-epB" id="0KK-4V-vEI"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.40000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KZF-DZ-RkH">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GKq-et-MBn" userLabel="ContainerView">
+                    <rect key="frame" x="0.0" y="446" width="414" height="450"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_titulo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GMf-dO-5PL">
+                            <rect key="frame" x="25" y="25" width="364" height="30"/>
+                            <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="25"/>
+                            <color key="textColor" name="color1"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XtE-E1-y4T">
+                            <rect key="frame" x="357" y="25" width="32" height="32"/>
+                            <color key="tintColor" name="color12"/>
+                            <state key="normal" image="ico_close">
+                                <color key="titleColor" name="color12"/>
+                            </state>
+                            <connections>
+                                <action selector="closeModal:" destination="-1" eventType="touchUpInside" id="dOP-JK-pna"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="_contenido" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s0H-4c-K2x">
+                            <rect key="frame" x="25" y="80" width="364" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wd6-DS-qFU">
+                            <rect key="frame" x="25" y="150.5" width="364" height="30"/>
+                            <color key="backgroundColor" name="color1"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="Aceptar">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="aceptar:" destination="-1" eventType="touchUpInside" id="swr-t5-SPM"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="s0H-4c-K2x" firstAttribute="leading" secondItem="GKq-et-MBn" secondAttribute="leading" constant="25" id="4Q0-Qz-sKO"/>
+                        <constraint firstAttribute="trailing" secondItem="XtE-E1-y4T" secondAttribute="trailing" constant="25" id="E7U-KL-EY6"/>
+                        <constraint firstItem="wd6-DS-qFU" firstAttribute="leading" secondItem="GKq-et-MBn" secondAttribute="leading" constant="25" id="HW2-7I-6Gj"/>
+                        <constraint firstItem="s0H-4c-K2x" firstAttribute="top" secondItem="GMf-dO-5PL" secondAttribute="bottom" constant="25" id="JBa-CR-eMM"/>
+                        <constraint firstItem="wd6-DS-qFU" firstAttribute="top" secondItem="s0H-4c-K2x" secondAttribute="bottom" constant="50" id="LVI-4B-PtX"/>
+                        <constraint firstAttribute="height" constant="450" id="QPO-7Q-Squ"/>
+                        <constraint firstItem="XtE-E1-y4T" firstAttribute="top" secondItem="GKq-et-MBn" secondAttribute="top" constant="25" id="Qd2-K2-Jhj"/>
+                        <constraint firstItem="GMf-dO-5PL" firstAttribute="top" secondItem="GKq-et-MBn" secondAttribute="top" constant="25" id="URB-gH-0Lk"/>
+                        <constraint firstItem="GMf-dO-5PL" firstAttribute="leading" secondItem="GKq-et-MBn" secondAttribute="leading" constant="25" id="XTm-pF-esF"/>
+                        <constraint firstAttribute="trailing" secondItem="s0H-4c-K2x" secondAttribute="trailing" constant="25" id="Z0l-AN-6jY"/>
+                        <constraint firstAttribute="trailing" secondItem="wd6-DS-qFU" secondAttribute="trailing" constant="25" id="uV9-6u-zlG"/>
+                        <constraint firstAttribute="trailing" secondItem="GMf-dO-5PL" secondAttribute="trailing" constant="25" id="ybg-Ha-JhM"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <constraints>
+                <constraint firstItem="KZF-DZ-RkH" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="GPI-VX-iuw"/>
+                <constraint firstItem="GKq-et-MBn" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="H83-cT-d2I"/>
+                <constraint firstAttribute="bottom" secondItem="GKq-et-MBn" secondAttribute="bottom" id="I02-ug-sRi"/>
+                <constraint firstAttribute="bottom" secondItem="KZF-DZ-RkH" secondAttribute="bottom" id="Zc7-b6-SAP"/>
+                <constraint firstItem="KZF-DZ-RkH" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="qxW-iq-q1R"/>
+                <constraint firstItem="KZF-DZ-RkH" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="yIj-gc-6bz"/>
+                <constraint firstItem="GKq-et-MBn" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="zEQ-ok-arU"/>
+            </constraints>
+            <point key="canvasLocation" x="31.884057971014496" y="132.58928571428572"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ico_close" width="32" height="32"/>
+        <namedColor name="color1">
+            <color red="0.76499998569488525" green="0.20399999618530273" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="color12">
+            <color red="0.61568627450980395" green="0.61568627450980395" blue="0.61568627450980395" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
