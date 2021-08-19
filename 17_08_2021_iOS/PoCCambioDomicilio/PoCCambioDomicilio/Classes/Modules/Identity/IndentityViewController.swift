@@ -26,6 +26,7 @@ POSSIBILITY OF SUCH DAMAGE.
 */
 
 import UIKit
+import PKHUD
 
 protocol IndentityViewPresenterInterface: ViewPresenterInterface {
     func reloadInformationInView()
@@ -41,8 +42,14 @@ class IndentityViewController: UIViewController, ViewInterface {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        HUD.show(.progress)
         self.presenter.fetchDataIdentity()
         self.setupTableView()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.isNavigationBarHidden = true
     }
     
     // MARK: - Private methods
@@ -59,9 +66,9 @@ extension IndentityViewController: IndentityViewPresenterInterface {
     func reloadInformationInView() {
         DispatchQueue.main.async {
             self.myProfileTableView.reloadData()
+            HUD.hide()
         }
     }
-    
     
 }
 

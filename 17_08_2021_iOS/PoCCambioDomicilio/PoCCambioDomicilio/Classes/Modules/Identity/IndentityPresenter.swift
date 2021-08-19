@@ -27,6 +27,7 @@ POSSIBILITY OF SUCH DAMAGE.
 
 import Foundation
 
+
 protocol IndentityPresenterRouterInterface: PresenterRouterInterface {
     
 }
@@ -80,6 +81,7 @@ extension IndentityPresenter: IndentityPresenterInteractorInterface {
 
 extension IndentityPresenter: IndentityPresenterViewInterface {
     func fetchDataIdentity() {
+        
         self.interactor.fetchDataIdentityInteractor()
     }
     

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		B4F372EB26CBB2C10056B086 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F372EA26CBB2C10056B086 /* ProfileViewModel.swift */; };
 		B4F372F026CBBDA20056B086 /* IdentityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F372EE26CBBDA20056B086 /* IdentityCell.swift */; };
 		B4F372F126CBBDA20056B086 /* IdentityCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4F372EF26CBBDA20056B086 /* IdentityCell.xib */; };
+		B4F372F726CBCD940056B086 /* PKHUD in Frameworks */ = {isa = PBXBuildFile; productRef = B4F372F626CBCD940056B086 /* PKHUD */; };
 		B4FF310526CB96B1001F0779 /* PublicSans-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B4FF30F326CB96B1001F0779 /* PublicSans-Black.ttf */; };
 		B4FF310626CB96B1001F0779 /* PublicSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B4FF30F426CB96B1001F0779 /* PublicSans-Italic.ttf */; };
 		B4FF310726CB96B1001F0779 /* PublicSans-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B4FF30F526CB96B1001F0779 /* PublicSans-ExtraBoldItalic.ttf */; };
@@ -183,6 +184,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4F372F726CBCD940056B086 /* PKHUD in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -455,6 +457,9 @@
 			dependencies = (
 			);
 			name = PoCCambioDomicilio;
+			packageProductDependencies = (
+				B4F372F626CBCD940056B086 /* PKHUD */,
+			);
 			productName = PoCCambioDomicilio;
 			productReference = E9A3646526C669CB009CD517 /* PoCCambioDomicilio.app */;
 			productType = "com.apple.product-type.application";
@@ -482,6 +487,9 @@
 				Base,
 			);
 			mainGroup = E9A3645C26C669CB009CD517;
+			packageReferences = (
+				B4F372F526CBCD940056B086 /* XCRemoteSwiftPackageReference "PKHUD" */,
+			);
 			productRefGroup = E9A3646626C669CB009CD517 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -781,6 +789,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B4F372F526CBCD940056B086 /* XCRemoteSwiftPackageReference "PKHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pkluz/PKHUD.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 5.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B4F372F626CBCD940056B086 /* PKHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B4F372F526CBCD940056B086 /* XCRemoteSwiftPackageReference "PKHUD" */;
+			productName = PKHUD;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E9A3645D26C669CB009CD517 /* Project object */;
 }

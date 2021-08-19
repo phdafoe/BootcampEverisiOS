@@ -20,18 +20,28 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Jz0-mh-bsv">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Jz0-mh-bsv">
+                    <rect key="frame" x="0.0" y="64" width="375" height="748"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O6M-0K-OZJ">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                    <color key="backgroundColor" red="0.90196078430000004" green="0.94509803920000002" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="YFE-BZ-6Eb"/>
+                    </constraints>
+                </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
-            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Jz0-mh-bsv" secondAttribute="trailing" id="HJn-Oy-eKL"/>
-                <constraint firstItem="Jz0-mh-bsv" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="JvF-Qe-3Gl"/>
-                <constraint firstItem="Jz0-mh-bsv" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="gaU-Qs-eSI"/>
-                <constraint firstAttribute="bottom" secondItem="Jz0-mh-bsv" secondAttribute="bottom" id="xxA-Sh-xHc"/>
+                <constraint firstItem="O6M-0K-OZJ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="1td-Sx-fDR"/>
+                <constraint firstAttribute="trailing" secondItem="O6M-0K-OZJ" secondAttribute="trailing" id="OMa-4i-w8D"/>
+                <constraint firstItem="Jz0-mh-bsv" firstAttribute="leading" secondItem="O6M-0K-OZJ" secondAttribute="leading" id="bCj-IM-xmC"/>
+                <constraint firstAttribute="bottom" secondItem="Jz0-mh-bsv" secondAttribute="bottom" id="cGG-kJ-Gxj"/>
+                <constraint firstItem="Jz0-mh-bsv" firstAttribute="trailing" secondItem="O6M-0K-OZJ" secondAttribute="trailing" id="lBb-GN-Nr6"/>
+                <constraint firstItem="Jz0-mh-bsv" firstAttribute="top" secondItem="O6M-0K-OZJ" secondAttribute="bottom" id="vEx-P1-bz6"/>
+                <constraint firstItem="O6M-0K-OZJ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="wse-zA-5ED"/>
             </constraints>
             <point key="canvasLocation" x="31.199999999999999" y="131.52709359605913"/>
         </view>
